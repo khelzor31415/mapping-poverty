@@ -1,0 +1,3099 @@
+                                                   PHHR71FL                                                   
+                                                PHHR71FL_DICT                                                 
+
+                                        PHHR71FL.DCF                                                          
+                                     Last Modified:  3/5/2020  2:00:23 PM                                     
+
+--------------------------------------------------------------------------------------------------------------
+Level Name                    Level Label                                                  Type            Rec
+  Record Name                   Record Label                                              Value  Req  Max  Len
+--------------------------------------------------------------------------------------------------------------
+HOUSEHOLD                     HOUSEHOLD                                                                       
+  RECORD1                       RECORD1                                                          Yes    1  3681
+Level: HOUSEHOLD                                       Record: RECORD1
+--------------------------------------------------------------------------------------------------------------
+                                                                                 Data Item            Dec Zero
+Item Name              Item Label                                     Start  Len Type Type  Occ  Dec Char Fill
+--------------------------------------------------------------------------------------------------------------
+HHID              (id) Case Identification                                1   12   AN    I    1    0   No   No
+                         (record type)                                    0    0   AN    I    1    0   No   No
+HV000                  Country code and phase                            13    3   AN    I    1    0   No   No
+HV001                  Cluster number                                    16    6    N    I    1    0   No   No
+HV002                  Household number                                  22    6    N    I    1    0   No   No
+HV003                  Respondent's line number (answering Household q   28    3    N    I    1    0   No   No
+                               0      Incomplete household
+                               1:999  
+HV004                  Ultimate area unit                                31    4    N    I    1    0   No   No
+HV005                  Household sample weight (6 decimals)              35    8    N    I    1    0   No   No
+HV006                  Month of interview                                43    2    N    I    1    0   No   No
+                               1:12  
+HV007                  Year of interview                                 45    4    N    I    1    0   No   No
+                               2015:2025  
+HV008                  Date of interview (CMC)                           49    4    N    I    1    0   No   No
+HV008A                 Date of interview Century Day Code (CDC)          53    5    N    I    1    0   No   No
+HV009                  Number of household members                       58    2    N    I    1    0   No   No
+                               0:90  
+HV010                  Number of eligible women in household             60    2    N    I    1    0   No   No
+                               0:20  
+HV011                  NA - Number of eligible men in household          62    2    N    I    1    0   No   No
+                               0:20  
+HV012                  Number of de jure members                         64    2    N    I    1    0   No   No
+                               0:90  
+HV013                  Number of de facto members                        66    2    N    I    1    0   No   No
+                               0:90  
+HV014                  Number of children 5 and under (de jure)          68    2    N    I    1    0   No   No
+                               0:20  
+HV015                  Result of household interview                     70    1    N    I    1    0   No   No
+                               1  Completed
+                               2  No Household member/no competent member at home
+                               3  Entire Household absent for extended period of time
+                               4  Postponed
+                               5  Refused
+                               6  Dwelling vacant or address not a dwelling
+                               7  Dwelling destroyed
+                               8  Dwelling not found
+                               9  Other
+HV016                  Day of interview                                  71    2    N    I    1    0   No   No
+                               1:31  
+HV017                  Number of visits                                  73    1    N    I    1    0   No   No
+                               1:8  
+                           (m) 9    Missing
+HV018                  Interviewer identification                        74    5    N    I    1    0   No   No
+HV019                  NA - Keyer identification                         79    3    N    I    1    0   No   No
+HV020                  Ever-married sample                               82    1    N    I    1    0   No   No
+                               0  All woman sample
+                               1  Ever married sample
+HV021                  Primary sampling unit                             83    4    N    I    1    0   No   No
+HV022                  Sample strata for sampling errors                 87    4    N    I    1    0   No   No
+                               1    BASILAN
+                               2    CITY OF ISABELA
+                               3    LANAO DEL SUR
+                               4    MAGUINDANAO
+                               5    COTABATO CITY
+                               6    SULU
+                               7    TAWI-TAWI
+                               8    ABRA
+                               9    APAYAO
+                               10   BAGUIO CITY
+                               11   BENGUET (Excluding Baguio City)
+                               12   IFUGAO
+                               13   KALINGA
+                               14   MOUNTAIN PROVINCE
+                               15   BUTUAN CITY (Capital)
+                               16   AGUSAN DEL NORTE (Excluding Butuan City)
+                               17   AGUSAN DEL SUR
+                               18   DINAGAT ISLANDS
+                               19   SURIGAO DEL NORTE
+                               20   SURIGAO DEL SUR
+                               21   CALOOCAN CITY
+                               22   CITY OF MALABON
+                               23   CITY OF LAS PIÑAS
+                               24   CITY OF MAKATI
+                               25   CITY OF MANDALUYONG
+                               26   CITY OF MANILA
+                               27   CITY OF MARIKINA
+                               28   CITY OF MUNTINLUPA
+                               29   CITY OF NAVOTAS
+                               30   CITY OF PARAÑAQUE
+                               31   PASAY CITY
+                               32   CITY OF PASIG
+                               33   PATEROS
+                               34   QUEZON CITY
+                               35   CITY OF SAN JUAN
+                               36   TAGUIG CITY
+                               37   CITY OF VALENZUELA
+                               38   NEGROS OCCIDENTAL (Excluding Bacolod City)
+                               39   BACOLOD CITY (Capital)
+                               40   NEGROS ORIENTAL
+                               41   ILOCOS NORTE
+                               42   ILOCOS SUR
+                               43   LA UNION
+                               44   PANGASINAN
+                               45   BATANES
+                               46   CAGAYAN
+                               47   ISABELA
+                               48   NUEVA VIZCAYA
+                               49   QUIRINO
+                               50   AURORA
+                               51   BATAAN
+                               52   BULACAN
+                               53   NUEVA ECIJA
+                               54   ANGELES CITY
+                               55   PAMPANGA (EXCLUDING ANGELES CITY)
+                               56   TARLAC
+                               57   OLONGAPO CITY
+                               58   ZAMBALES (Excluding Olongapo City)
+                               59   BATANGAS
+                               60   CAVITE
+                               61   LAGUNA
+                               62   LUCENA CITY (Capital)
+                               63   QUEZON (Excluding Lucena City)
+                               64   RIZAL
+                               65   MARINDUQUE
+                               66   OCCIDENTAL MINDORO
+                               67   ORIENTAL MINDORO
+                               68   PUERTO PRINCESA CITY (Capital)
+                               69   PALAWAN (Excluding Puerto Princesa City)
+                               70   ROMBLON
+                               71   ALBAY
+                               72   CAMARINES NORTE
+                               73   CAMARINES SUR
+                               74   CATANDUANES
+                               75   MASBATE
+                               76   SORSOGON
+                               77   AKLAN
+                               78   ANTIQUE
+                               79   CAPIZ
+                               80   GUIMARAS
+                               81   ILOILO CITY (Capital)
+                               82   ILOILO (Excluding Iloilo City)
+                               83   BOHOL
+                               84   CEBU CITY (Capital)
+                               85   LAPU-LAPU CITY (OPON)
+                               86   MANDAUE CITY
+                               87   CEBU (EXCLUDING HUCS)
+                               88   SIQUIJOR
+                               89   BILIRAN
+                               90   EASTERN SAMAR
+                               91   TACLOBAN CITY (Capital)
+                               92   LEYTE (Excluding Tacloban City)
+                               93   NORTHERN SAMAR
+                               94   SOUTHERN LEYTE
+                               95   SAMAR (WESTERN SAMAR)
+                               96   ZAMBOANGA DEL NORTE
+                               97   ZAMBOANGA DEL SUR
+                               98   ZAMBOANGA CITY
+                               99   ZAMBOANGA SIBUGAY
+                               100  BUKIDNON
+                               101  ILIGAN CITY
+                               102  LANAO DEL NORTE (Excluding Iligan City)
+                               103  MISAMIS OCCIDENTAL
+                               104  CAGAYAN DE ORO CITY (Capital)
+                               105  MISAMIS ORIENTAL (EXCLUDING CAGAYAN DE ORO CITY)
+                               106  CAMIGUIN
+                               107  COMPOSTELA VALLEY
+                               108  DAVAO DEL NORTE
+                               109  DAVAO CITY
+                               110  DAVAO DEL SUR (Excluding Davao City)
+                               111  DAVAO OCCIDENTAL
+                               112  DAVAO ORIENTAL
+                               113  COTABATO (NORTH COTABATO)
+                               114  SARANGANI
+                               115  GENERAL SANTOS CITY (DADIANGAS)
+                               116  SOUTH COTABATO (Excluding General Santos City)
+                               117  SULTAN KUDARAT
+HV023                  Stratification used in sample design              91    4    N    I    1    0   No   No
+                               1    BUCAY, ABRA
+                               2    BUTUAN CITY (CAPITAL), AGUSAN DEL NORTE
+                               3    CITY OF CABADBARAN, AGUSAN DEL NORTE (EXCLUDING BUTUAN CITY)
+                               4    TALACOGON, AGUSAN DEL SUR
+                               5    NUMANCIA, AKLAN
+                               6    BACACAY, ALBAY
+                               7    TIBIAO, ANTIQUE
+                               8    CONNER, APAYAO
+                               9    DIPACULAO, AURORA
+                               10   CITY OF LAMITAN, BASILAN
+                               11   DINALUPIHAN, BATAAN
+                               12   BASCO (CAPITAL), BATANES
+                               13   LEMERY, BATANGAS
+                               14   BAGUIO CITY, BENGUET
+                               15   TUBLAY, BENGUET (EXCLUDING BAGUIO CITY)
+                               16   NAVAL (CAPITAL), BILIRAN
+                               17   VALENCIA, BOHOL
+                               18   CITY OF MALAYBALAY (CAPITAL), BUKIDNON
+                               19   PANDI, BULACAN
+                               20   BUSTOS, BULACAN
+                               21   LASAM, CAGAYAN
+                               22   CAPALONGA, CAMARINES NORTE
+                               23   BATO, CAMARINES SUR
+                               24   MAMBAJAO (CAPITAL), CAMIGUIN
+                               25   ROXAS CITY (CAPITAL), CAPIZ
+                               26   VIGA, CATANDUANES
+                               27   BACOOR CITY, CAVITE
+                               28   CEBU CITY (CAPITAL), CEBU
+                               29   CEBU CITY (CAPITAL), CEBU
+                               30   MANDAUE CITY, CEBU
+                               31   CORDOBA, CEBU (EXCLUDING HUCS)
+                               32   CITY OF ISABELA, CITY OF ISABELA
+                               33   TONDO, CITY OF MANILA
+                               34   NEW BATAAN, COMPOSTELA VALLEY
+                               35   KABACAN, COTABATO (NORTH COTABATO)
+                               36   COTABATO CITY, COTABATO CITY
+                               37   CITY OF TAGUM (CAPITAL), DAVAO DEL NORTE
+                               38   DAVAO CITY, DAVAO DEL SUR
+                               39   CITY OF DIGOS (CAPITAL), DAVAO DEL SUR (EXCLUDING DAVAO CITY)
+                               40   MALITA, DAVAO OCCIDENTAL
+                               41   BANAYBANAY, DAVAO ORIENTAL
+                               42   TUBAJON, DINAGAT ISLANDS
+                               43   CAN-AVID, EASTERN SAMAR
+                               44   BUENAVISTA, GUIMARAS
+                               45   ALFONSO LISTA (POTIA), IFUGAO
+                               46   BACARRA, ILOCOS NORTE
+                               47   PAOAY, ILOCOS NORTE
+                               48   ILOILO CITY (CAPITAL), ILOILO
+                               49   CITY OF PASSI, ILOILO (EXCLUDING ILOILO CITY)
+                               50   ROXAS, ISABELA
+                               51   CITY OF TABUK (CAPITAL), KALINGA
+                               52   BALAOAN, LA UNION
+                               53   LOS BAÑOS, LAGUNA
+                               54   ILIGAN CITY, LANAO DEL NORTE
+                               55   BACOLOD, LANAO DEL NORTE (EXCLUDING ILIGAN CITY)
+                               56   BALABAGAN, LANAO DEL SUR
+                               57   TACLOBAN CITY (CAPITAL), LEYTE
+                               58   BARUGO, LEYTE (EXCLUDING TACLOBAN CITY)
+                               59   SULTAN MASTURA, MAGUINDANAO
+                               60   SANTA CRUZ, MARINDUQUE
+                               61   BALENO, MASBATE
+                               62   CITY OF MALABON, Metro Manila
+                               63   CITY OF LAS PIÑAS, Metro Manila
+                               64   CITY OF MAKATI, Metro Manila
+                               65   CITY OF MANDALUYONG, Metro Manila
+                               66   CITY OF MARIKINA, Metro Manila
+                               67   CITY OF MUNTINLUPA, Metro Manila
+                               68   CITY OF NAVOTAS, Metro Manila
+                               69   CITY OF PARAÑAQUE, Metro Manila
+                               70   CITY OF PASIG, Metro Manila
+                               71   PATEROS, Metro Manila
+                               72   QUEZON CITY, Metro Manila
+                               73   CITY OF SAN JUAN, Metro Manila
+                               74   TAGUIG CITY, Metro Manila
+                               75   CITY OF VALENZUELA, Metro Manila
+                               76   JIMENEZ, MISAMIS OCCIDENTAL
+                               77   CAGAYAN DE ORO CITY (CAPITAL), MISAMIS ORIENTAL
+                               78   BALINGASAG, MISAMIS ORIENTAL (EXCLUDING CAGAYAN DE ORO CITY)
+                               79   BARLIG, MOUNTAIN PROVINCE
+                               80   PASAY CITY, NCR
+                               81   BACOLOD CITY (CAPITAL), NEGROS OCCIDENTAL
+                               82   SILAY CITY, NEGROS OCCIDENTAL (EXCLUDING BACOLOD CITY)
+                               83   CITY OF TANJAY, NEGROS ORIENTAL
+                               84   LAOANG, NORTHERN SAMAR
+                               85   BAGABAG, NUEVA VIZCAYA
+                               86   MAMBURAO (CAPITAL), OCCIDENTAL MINDORO
+                               87   CITY OF CALAPAN (CAPITAL), ORIENTAL MINDORO
+                               88   PUERTO PRINCESA CITY (CAPITAL), PALAWAN
+                               89   SAN VICENTE, PALAWAN (EXCLUDING PUERTO PRINCESA CITY)
+                               90   ANGELES CITY, PAMPANGA
+                               91   MAGALANG, PAMPANGA (EXCLUDING ANGELES CITY)
+                               92   SAN JACINTO, PANGASINAN
+                               93   LUCENA CITY (CAPITAL), QUEZON
+                               94   CANDELARIA, QUEZON (EXCLUDING LUCENA CITY)
+                               95   CALOOCAN CITY, Quezon city
+                               96   CABARROGUIS (CAPITAL), QUIRINO
+                               97   RODRIGUEZ (MONTALBAN), RIZAL
+                               98   ODIONGAN, ROMBLON
+                               99   CITY OF CATBALOGAN (CAPITAL), SAMAR (WESTERN SAMAR)
+                               100  MALAPATAN, SARANGANI
+                               101  LARENA, SIQUIJOR
+                               102  CITY OF SORSOGON (CAPITAL), SORSOGON
+                               103  GENERAL SANTOS CITY (DADIANGAS), SOUTH COTABATO
+                               104  CITY OF KORONADAL (CAPITAL), SOUTH COTABATO (EXCLUDING GENERAL SANTOS CITY
+                               105  SOGOD, SOUTHERN LEYTE
+                               106  CITY OF TACURONG, SULTAN KUDARAT
+                               107  JOLO, SULU
+                               108  SURIGAO CITY (CAPITAL), SURIGAO DEL NORTE
+                               109  TAGO, SURIGAO DEL SUR
+                               110  MONCADA, TARLAC
+                               111  BONGAO (CAPITAL), TAWI-TAWI
+                               112  OLONGAPO CITY, ZAMBALES
+                               113  CABANGAN, ZAMBALES (EXCLUDING OLONGAPO CITY)
+                               114  KATIPUNAN, ZAMBOANGA DEL NORTE
+                               115  DUMINGAG, ZAMBOANGA DEL SUR
+                               116  ZAMBOANGA CITY, ZAMBOANGA DEL SUR
+                               117  ROSELLER LIM, ZAMBOANGA SIBUGAY
+HV024                  Region                                            95    2    N    I    1    0   No   No
+                               1   Ilocos
+                               2   Cagayan Valley
+                               3   Central Luzon
+                               4   Calabarzon
+                               5   Bicol
+                               6   Western Visayas
+                               7   Central Visayas
+                               8   Eastern Visayas
+                               9   Zamboanga Peninsula
+                               10  Northern Mindanao
+                               11  Davao
+                               12  Soccsksargen
+                               13  National Capital
+                               14  Cordillera
+                               15  Autonomous Region in Muslim Mindanao
+                               16  Caraga
+                               17  Mimaropa
+                               18  Negros Island Region
+HV025                  Type of place of residence                        97    1    N    I    1    0   No   No
+                               1  Urban
+                               2  Rural
+HV026                  NA - Place of residence                           98    1    N    I    1    0   No   No
+                               0  Capital, large city
+                               1  Small city
+                               2  Town
+                               3  Countryside
+                           (m) 9  Missing
+HV027                  Household selected for male interview             99    1    N    I    1    0   No   No
+                               0  Not selected
+                               1  Men's survey
+                               2  Husband's survey
+HV028                  Household weight for male subsample (6 decimals  100    8    N    I    1    0   No   No
+HV030                  Field supervisor                                 108    5    N    I    1    0   No   No
+HV031                  NA - Field editor                                113    5    N    I    1    0   No   No
+HV032                  NA - Office editor                               118    3    N    I    1    0   No   No
+HV035                  NA - Number of eligible children for height and  121    2    N    I    1    0   No   No
+                               0:20  
+HV040                  NA - Cluster altitude in meters                  123    4    N    I    1    0   No   No
+                           (m) 9999  Missing
+HV041                  NA - Total adults measured                       127    2    N    I    1    0   No   No
+                               0:20  
+HV042                  Household selected for hemoglobin                129    1    N    I    1    0   No   No
+                               0  Not selected
+                               1  Selected
+HV044                  Household selected for Domestic Violence module  130    1    N    I    1    0   No   No
+                               0  Household not selected
+                               1  Household selected
+                          (na)    Not applicable
+HV045A                 Language of questionnaire                        131    3    N    I    1    0   No   No
+                               1   English
+                               2   Tagalog
+                               3   Ilocano
+                               4   Bikol
+                               5   Waray
+                               6   Hiligaynon
+                               7   Cebuano
+                               8   Akeanon
+                               9   Visaya
+                               10  Chavacano
+                               11  Kankanaey
+                               12  Kapampangan
+                               13  Maguindanao
+                               14  Maranao
+                               15  Menasbate
+                               16  Pangasinan
+                               17  Sama
+                               18  Tausog
+                               19  Yakan
+                               21  Blaan
+                               24  Itawes
+                               25  Ivatan
+                               96  Other
+                               99  Missing
+HV045B                 Language of interview                            134    3    N    I    1    0   No   No
+                               1   English
+                               2   Tagalog
+                               3   Ilocano
+                               4   Bikol
+                               5   Waray
+                               6   Hiligaynon
+                               7   Cebuano
+                               8   Akeanon
+                               9   Visaya
+                               10  Chavacano
+                               11  Kankanaey
+                               12  Kapampangan
+                               13  Maguindanao
+                               14  Maranao
+                               15  Menasbate
+                               16  Pangasinan
+                               17  Sama
+                               18  Tausog
+                               19  Yakan
+                               20  Ayangan
+                               21  Blaan
+                               22  Iranon
+                               25  Ivatan
+                               29  Manobo
+                               30  Sinama Bangingi
+                               31  Tausog
+                               32  Sanam
+                               37  Tuwali
+                               96  Other
+                               99  Missing
+HV045C                 Native language of respondent                    137    3    N    I    1    0   No   No
+                               1   English
+                               2   Tagalog
+                               3   Ilocano
+                               4   Bikol
+                               5   Waray
+                               6   Hiligaynon
+                               7   Cebuano
+                               8   Akeanon
+                               9   Visaya
+                               10  Chavacano
+                               11  Kanyanaey
+                               12  Kapampangan
+                               13  Maguindanaon
+                               14  Maranao
+                               15  Menasbate
+                               16  Pangasinan
+                               17  Sama
+                               18  Tausog
+                               19  Yakan
+                               20  Ayangan
+                               21  Blaan
+                               22  Iranon
+                               23  Isnag
+                               24  Itawes
+                               25  Ivatan
+                               26  Kalanguya
+                               27  Kalinga
+                               28  Kamayo
+                               29  Manubo
+                               30  Sama Bangingi
+                               31  Samal Bangingi
+                               32  Samal
+                               33  Subanen
+                               34  Surigaonon
+                               35  Tboli
+                               36  Teduray
+                               37  Tuwali
+                               96  Other
+                               99  Missing
+HV046                  Translator used                                  140    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+HV801                  Time interview started (hhmm - 24 hour clock)    141    4    N    I    1    0   No   No
+                               10:2459  
+                           (m) 9999     Missing
+HV802                  Time interview ended (hhmm - 24 hour clock)      145    4    N    I    1    0   No   No
+                               10:2359  
+                           (m) 9999     Missing
+HV803                  Length of interview in minutes                   149    2    N    I    1    0   No   No
+                               0:94  
+                               95    95+
+                               96    2+ visits
+                               97    Inconsistent
+                           (m) 99    Missing
+HV804                  NA - Number of visits for biomarker              151    1    N    I    1    0   No   No
+                               1:8  
+                           (m) 9    Missing
+HV807D                 NA - Day of biomarker visit                      152    2    N    I    1    0   No   No
+                               1:31  
+HV807M                 NA - Month of biomarker visit                    154    2    N    I    1    0   No   No
+                               1:12  
+HV807Y                 NA - Year of biomarker visit                     156    4    N    I    1    0   No   No
+                               2015:2025  
+HV807C                 NA - Date of biomarker (CMC)                     160    4    N    I    1    0   No   No
+HV807A                 NA - Date of biomarker Century Day Code (CDC)    164    5    N    I    1    0   No   No
+HV201                  Source of drinking water                         169    2    N    I    1    0   No   No
+                               10  PIPED WATER
+                               11  Piped into dwelling
+                               12  Piped to yard/plot
+                               13  Piped to neighbor
+                               14  Public tap/standpipe
+                               20  TUBE WELL WATER
+                               21  Tube well or borehole
+                               30  DUG WELL (OPEN/PROTECTED)
+                               31  Protected well
+                               32  Unprotected well
+                               40  SURFACE FROM SPRING
+                               41  Protected spring
+                               42  Unprotected spring
+                               43  River/dam/lake/ponds/stream/canal/irrigation channel
+                               51  Rainwater
+                               61  Tanker truck
+                               62  Cart with small tank
+                               71  Bottled water
+                               96  Other
+                           (m) 99  Missing
+HV202                  Source of non-drinking water                     171    2    N    I    1    0   No   No
+                               10  PIPED WATER
+                               11  Piped into dwelling
+                               12  Piped to yard/plot
+                               13  Piped to neighbor
+                               14  Public tap/standpipe
+                               20  TUBE WELL WATER
+                               21  Tube well or borehole
+                               30  DUG WELL (OPEN/PROTECTED)
+                               31  Protected well
+                               32  Unprotected well
+                               40  SURFACE FROM SPRING
+                               41  Protected spring
+                               42  Unprotected spring
+                               43  River/dam/lake/ponds/stream/canal/irrigation channel
+                               51  Rainwater
+                               61  Tanker truck
+                               62  Cart with small tank
+                               71  Bottled water
+                               96  Other
+                           (m) 99  Missing
+HV201A                 Water not available for at least a day last two  173    1    N    I    1    0   No   No
+                               0  No, not interrupted for a full day
+                               1  Yes, interrupted for a full day or more
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV204                  Time to get to water source (minutes)            174    3    N    I    1    0   No   No
+                               0:900  
+                               996    On premises
+                               998    Don't know
+                           (m) 999    Missing
+                          (na)        Not applicable
+HV205                  Type of toilet facility                          177    2    N    I    1    0   No   No
+                               10  FLUSH TOILET
+                               11  Flush to piped sewer system
+                               12  Flush to septic tank
+                               13  Flush to pit latrine
+                               14  Flush to somewhere else
+                               15  Flush, don't know where
+                               20  PIT TOILET LATRINE
+                               21  Ventilated Improved Pit latrine (VIP)
+                               22  Pit latrine with slab
+                               23  Pit latrine without slab/open pit
+                               30  NO FACILITY
+                               31  No facility/bush/field
+                               41  Composting toilet
+                               42  Bucket toilet
+                               43  Hanging toilet/latrine
+                               71  Public toilet
+                               96  Other
+                           (m) 99  Missing
+HV206                  Has electricity                                  179    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+HV207                  Has radio                                        180    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+HV208                  Has television                                   181    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+HV209                  Has refrigerator                                 182    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+HV210                  Has bicycle                                      183    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+HV211                  Has motorcycle/scooter                           184    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+HV212                  Has car/truck                                    185    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+HV213                  Main floor material                              186    2    N    I    1    0   No   No
+                               10     NATURAL
+                               11     Earth/sand
+                               12:19  
+                               20     RUDIMENTARY
+                               21     Wood planks
+                               22     Palm/bamboo
+                               23:29  
+                               30     FINISHED
+                               31     Parquet or polished wood
+                               32     Vinyl or asphalt strips
+                               33     Ceramic tiles
+                               34     Cement
+                               35     Carpet
+                               36     Marble
+                               37:39  
+                               96     Other
+                           (m) 99     Missing
+HV214                  Main wall material                               188    2    N    I    1    0   No   No
+                               10     NATURAL
+                               11     No walls
+                               12     Cane/palm/trunks
+                               13     Dirt
+                               14:19  
+                               20     RUDIMENTARY
+                               21     Bamboo
+                               22     Stone with mud
+                               23     Uncovered adobe
+                               24     Plywood
+                               25     Makeshift/cardboard
+                               26     Reused wood
+                               27:29  
+                               30     FINISHED
+                               31     Cement
+                               32     Stone with lime/cement
+                               33     Bricks
+                               34     Cement hollow blocks
+                               35     Covered adobe
+                               36     Wood planks/shingles
+                               37     Galvanized iron/aluminum
+                               38:39  
+                               96     Other
+                           (m) 99     Missing
+HV215                  Main roof material                               190    2    N    I    1    0   No   No
+                               10     NATURAL
+                               11     No roof
+                               12     Thatch/palm leaf (NIPA)
+                               13     Sod/grass (COGON)
+                               14:19  
+                               20     RUDIMENTARY
+                               21     Rustic mat
+                               22     Palm/bamboo
+                               23     Wood planks
+                               24     Makeshift/cardboard
+                               25:29  
+                               30     FINISHED
+                               31     Metal/galvanized iron/alumi
+                               32     Wood
+                               33     Calamine/cement fiber
+                               34     Ceramic tiles
+                               35     Cement
+                               36     Roofing shingles
+                               37:39  
+                               96     Other
+                           (m) 99     Missing
+HV216                  Number of rooms used for sleeping                192    2    N    I    1    0   No   No
+                               0:24  
+                           (m) 99    Missing
+HV217                  Relationship structure                           194    1    N    I    1    0   No   No
+                               0  No adults
+                               1  One adult
+                               2  Two adults, opposite sex
+                               3  Two adults, same sex
+                               4  Three+ related adults
+                               5  Unrelated adults
+HV218                  Line number of head of household                 195    2    N    I    1    0   No   No
+                               1:90  
+HV219                  Sex of head of household                         197    1    N    I    1    0   No   No
+                               1  Male
+                               2  Female
+                           (m) 9  Missing
+HV220                  Age of head of household                         198    2    N    I    1    0   No   No
+                               0:96  
+                               97    97+
+                               98    Don't know
+                           (m) 99    Missing
+HV221                  Has telephone (land-line)                        200    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+HV225                  Share toilet with other households               201    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+HV226                  Type of cooking fuel                             202    2    N    I    1    0   No   No
+                               1   Electricity
+                               2   LPG
+                               3   Natural gas
+                               4   Biogas
+                               5   Kerosene
+                               6   Coal, lignite
+                               7   Charcoal
+                               8   Wood
+                               9   Straw/shrubs/grass
+                               10  Agricultural crop
+                               11  Animal dung
+                               95  No food cooked in house
+                               96  Other
+                           (m) 99  Missing
+HV227                  NA - Has mosquito bed net for sleeping           204    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+HV228                  NA - Children under 5 slept under mosquito bed   205    1    N    I    1    0   No   No
+                               0  No
+                               1  All children
+                               2  Some children
+                               3  No net in household
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV230A                 Place where household members wash their hands   206    1    N    I    1    0   No   No
+                               1  Observed, fixed place
+                               2  Observed, mobile place
+                               3  Not observed: not in dwelling
+                               4  Not observed: no permission to see
+                               5  Not observed: other reason
+                           (m) 9  Missing
+HV230B                 Presence of water at hand washing place          207    1    N    I    1    0   No   No
+                               0  Water not available
+                               1  Water is available
+                           (m) 9  Missing
+HV232                  Items present: Soap or detergent                 208    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+                          (na)    NotAppl
+HV232B                 Items present: Ash, mud, sand                    209    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+                          (na)    NotAppl
+HV232C                 NA - Items present: CS                           210    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+                          (na)    NotAppl
+HV232D                 NA - Items present: CS                           211    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+                          (na)    NotAppl
+HV232E                 NA - Items present: CS                           212    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+                          (na)    NotAppl
+HV232Y                 Items present: None                              213    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes: no cleansing agent observed
+                           (m) 9  Missing
+                          (na)    NotAppl
+HV234                  NA - Result of salt test for iodine (PPM)        214    3    N    I    1    0   No   No
+                               0    0 PPM (no iodine)
+                               7    Below 15 PPM
+                               15   15 PPM and above
+                               30   30 PPM
+                               994  Salt not tested
+                               995  No salt in household
+                           (m) 999  Missing
+HV234A                 NA - Result of salt test for iodine              217    1    N    I    1    0   No   No
+                               0  No iodine
+                               1  Iodine present
+                               3  No salt in household
+                               6  Salt not tested
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV235                  Location of source for water                     218    1    N    I    1    0   No   No
+                               1  In own dwelling
+                               2  In own yard/plot
+                               3  Elsewhere
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV236                  NA - Person fetching water                       219    1    N    I    1    0   No   No
+                               1  Adult woman
+                               2  Adult man
+                               3  Female child under 15 years old
+                               4  Male child under 15 years old
+                               6  Other
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV237                  Anything done to water to make safe to drink     220    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV237A                 Water usually treated by: boil                   221    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV237B                 Water usually treated by: add bleach/chlorine    222    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV237C                 Water usually treated by: strain through a clot  223    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV237D                 Water usually treated by: use water filter       224    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV237E                 Water usually treated by: solar disinfection     225    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV237F                 Water usually treated by: let it stand and sett  226    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV237G                 NA - Water usually treated by: CS                227    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV237H                 NA - Water usually treated by: CS                228    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV237I                 NA - Water usually treated by: CS                229    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV237J                 NA - Water usually treated by: CS                230    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV237K                 NA - Water usually treated by: CS                231    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV237X                 Water usually treated by: other                  232    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV237Z                 Water usually treated by: don't know             233    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes: don't know what is done to water
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV238                  Number of households sharing toilet              234    2    N    I    1    0   No   No
+                               2:9  
+                               95   10 or more households
+                               98   Don't know
+                           (m) 99   Missing
+                          (na)      Not applicable
+HV238A                 Location of toilet facility                      236    1    N    I    1    0   No   No
+                               1  In own dwelling
+                               2  In own yard/plot
+                               3  Elsewhere
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV239                  NA - Food cooked on stove or open fire           237    1    N    I    1    0   No   No
+                               1  Open fire
+                               2  Open stove
+                               3  Closed stove with chimney
+                               6  Other
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV240                  NA - Household has a chimney, hood or neither    238    1    N    I    1    0   No   No
+                               0  Neither chimney or hood
+                               1  Chimney
+                               2  Hood
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV241                  Food cooked in the house/ separate building/ ou  239    1    N    I    1    0   No   No
+                               1  In the house
+                               2  In a separate building
+                               3  Outdoors
+                               6  Other
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV242                  Household has separate room used as kitchen      240    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV243A                 Has mobile telephone                             241    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+HV243B                 Has watch                                        242    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+HV243C                 Has animal-drawn cart                            243    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+HV243D                 Has boat with a motor                            244    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+HV243E                 Has a computer                                   245    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+HV244                  Owns land usable for agriculture                 246    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+HV245                  Hectares of agricultural land (1 decimal)        247    3    N    I    1    0   No   No
+                               0:949  
+                               950    95 or more
+                               998    Unknown
+                           (m) 999    Missing
+                          (na)        Not applicable
+HV246                  Owns livestock, herds or farm animals            250    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+HV246A                 Owns cattle                                      251    2    N    I    1    0   No   No
+                               0     None
+                               1:94  
+                               95    95 or more
+                               98    Unknown
+                           (m) 99    Missing
+                          (na)       Not applicable
+HV246B                 Owns carabao                                     253    2    N    I    1    0   No   No
+                               0     None
+                               1:94  
+                               95    95 or more
+                               98    Unknown
+                           (m) 99    Missing
+                          (na)       Not applicable
+HV246C                 Owns horses/ donkeys/ mules                      255    2    N    I    1    0   No   No
+                               0     None
+                               1:94  
+                               95    95 or more
+                               98    Unknown
+                           (m) 99    Missing
+                          (na)       Not applicable
+HV246D                 Owns goats                                       257    2    N    I    1    0   No   No
+                               0     None
+                               1:94  
+                               95    95 or more
+                               98    Unknown
+                           (m) 99    Missing
+                          (na)       Not applicable
+HV246E                 Owns sheep                                       259    2    N    I    1    0   No   No
+                               0     None
+                               1:94  
+                               95    95 or more
+                               98    Unknown
+                           (m) 99    Missing
+                          (na)       Not applicable
+HV246F                 Owns chickens/poultry                            261    2    N    I    1    0   No   No
+                               0     None
+                               1:94  
+                               95    95 or more
+                               98    Unknown
+                           (m) 99    Missing
+                          (na)       Not applicable
+HV246G                 Swine                                            263    2    N    I    1    0   No   No
+                               0     None
+                               1:94  
+                               95    95 or more
+                               98    Unknown
+                           (m) 99    Missing
+                          (na)       Not applicable
+HV246H                 NA - Owns CS                                     265    2    N    I    1    0   No   No
+                               0     None
+                               1:94  
+                               95    95 or more
+                               98    Unknown
+                           (m) 99    Missing
+                          (na)       Not applicable
+HV246I                 NA - Owns CS                                     267    2    N    I    1    0   No   No
+                               0     None
+                               1:94  
+                               95    95 or more
+                               98    Unknown
+                           (m) 99    Missing
+                          (na)       Not applicable
+HV246J                 NA - Owns CS                                     269    2    N    I    1    0   No   No
+                               0     None
+                               1:94  
+                               95    95 or more
+                               98    Unknown
+                           (m) 99    Missing
+                          (na)       Not applicable
+HV246K                 NA - Owns CS                                     271    2    N    I    1    0   No   No
+                               0     None
+                               1:94  
+                               95    95 or more
+                               98    Unknown
+                           (m) 99    Missing
+                          (na)       Not applicable
+HV247                  NA - Has bank account                            273    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+HV252                  Frequency household members smoke inside the ho  274    1    N    I    1    0   No   No
+                               0  Never
+                               1  Daily
+                               2  Weekly
+                               3  Monthly
+                               4  Less than once a month
+                           (m) 9  Missing
+HV253                  NA - Has dwelling been sprayed against mosquito  275    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV253A                 NA - Dwelling sprayed by: government worker/pro  276    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV253B                 NA - Dwelling sprayed by: private company        277    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV253C                 NA - Dwelling sprayed by: NGO                    278    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV253D                 NA - Dwelling sprayed by: CS                     279    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV253E                 NA - Dwelling sprayed by: CS                     280    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV253F                 NA - Dwelling sprayed by: CS                     281    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV253G                 NA - Dwelling sprayed by: CS                     282    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV253H                 NA - Dwelling sprayed by: CS                     283    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV253X                 NA - Dwelling sprayed by: other                  284    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV253Z                 NA - Dwelling sprayed by: don't know             285    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes: don't know who sprayed the dwelling
+                               8  Don't know if it was sprayed
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV270                  Wealth index combined                            286    1    N    I    1    0   No   No
+                               1  Poorest
+                               2  Poorer
+                               3  Middle
+                               4  Richer
+                               5  Richest
+HV271                  Wealth index factor score combined (5 decimals)  287    8    N    I    1    0   No   No
+HV270A                 Wealth index for urban/rural                     295    1    N    I    1    0   No   No
+                               1  Poorest
+                               2  Poorer
+                               3  Middle
+                               4  Richer
+                               5  Richest
+HV271A                 Wealth index factor score for urban/rural (5 de  296    8    N    I    1    0   No   No
+HML1                   NA - Number of mosquito bed nets                 304    2    N    I    1    0   No   No
+                               0:97  
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+HML1A                  NA - Number of mosquito bed nets with specific   306    1    N    I    1    0   No   No
+                               0:7  
+                          (na)      Not applicable
+HML2                   NA - Number of children under mosquito bed net   307    2    N    I    1    0   No   No
+                               0:50  
+                           (m) 99    Missing
+                          (na)       Not applicable
+SHBSN                  Building serial number                           309    4    N    I    1    0   No   No
+SHUSN                  Housing unit serial number                       313    4    N    I    1    0   No   No
+SHSN                   Household serial number                          317    4    N    I    1    0   No   No
+SHPROV                 Province code                                    321    2    N    I    1    0   No   No
+                               39  Manila
+                               74  Mandaluyong/Marikina/Pasig/San Juan/Quezon City
+                               75  Caloocan/Malabon/Navotas/Valenzuela
+                               76  Las Pinas/Makati/Muntinlupa/Paranaque/Pasay/Taguig/Pateros
+                               1   abra
+                               81  apayao
+                               11  benguet
+                               27  ifugao
+                               44  mountain province
+                               32  kalinga
+                               28  ilocos norte
+                               29  ilocos sur
+                               33  la union
+                               55  pangasinan
+                               9   batanes
+                               15  cagayan
+                               31  isabela
+                               50  nueva vizcaya
+                               57  quirino
+                               77  aurora
+                               8   bataan
+                               14  bulacan
+                               49  nueva ecija
+                               54  pampanga
+                               69  tarlac
+                               71  zambales
+                               10  batangas
+                               21  cavite
+                               34  laguna
+                               56  quezon
+                               58  rizal
+                               40  marinduque
+                               51  occidental mindoro
+                               52  oriental mindoro
+                               53  palawan
+                               59  romblon
+                               5   albay
+                               16  camarines norte
+                               17  camarines sur
+                               20  catanduanes
+                               41  masbate
+                               62  sorsogon
+                               4   aklan
+                               6   antique
+                               19  capiz
+                               79  guimaras
+                               30  iloilo
+                               45  negros occidental
+                               12  bohol
+                               22  cebu (inc cities)
+                               46  negros oriental
+                               61  siquijor
+                               78  biliran
+                               26  eastern samar
+                               37  leyte
+                               48  northern samar
+                               60  samar (western)
+                               64  southern leyte
+                               97  isabela city
+                               72  zamboanga del norte
+                               73  zamboanga del sur
+                               83  zamboanga sibugay
+                               13  bukidnon
+                               18  camiguin
+                               35  lanao del norte
+                               42  misamis occidental
+                               43  misamis oriental
+                               82  compostella valley
+                               23  davao del norte
+                               24  davao del sur
+                               25  davao oriental
+                               86  davao occidental
+                               47  cotabato (north)
+                               98  cotabato city
+                               80  sarangani
+                               63  south cotabato
+                               65  sultan kudarat
+                               2   agusan del norte
+                               3   agusan del sur
+                               67  surigao del norte
+                               68  surigao del sur
+                               85  dinagat islands
+                               7   basilan
+                               36  lanao del sur
+                               38  maguindanao
+                               66  sulu
+                               70  tawi-tawi
+SH109B                 Has your pit latrine/septic tank/composting toi  323    1    N    I    1    0   No   No
+                               1  Yes
+                               0  No
+                               8  Don't know
+                           (m) 9  Missing
+SH109C                 What was done to it when it was full             324    2    N    I    1    0   No   No
+                               1   Removed by a service provider to a treatment plant
+                               2   Removed by a service provider and buried in a covered pit
+                               3   Removed by a service provider to don't know where
+                               4   Emptied by household and buried in a covered pit
+                               5   Emptied by household to uncovered pit, open ground, water body or elsewhere
+                               6   Closed/covered and constructed a new latrine/septic tank
+                               96  Other
+                               98  Don't know
+SH121G                 Washing machine                                  326    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH121H                 Air conditioning                                 327    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH121I                 DVD player                                       328    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH121J                 Audio component/karaoke                          329    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH121K                 Cable services                                   330    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH122H                 Boat without a motor                             331    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH123A                 Beneficiary of Pantawid Pamilyang Pilipino Prog  332    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH123B                 What year was/were registered with 4Psor CCT     333    4    N    I    1    0   No   No
+                               2000:2017  
+                               9998       Don't know
+SH124A                 Tenure status of the housing unit and lot occup  337    1    N    I    1    0   No   No
+                               1  Own house and lot or owner-like possession of house/lot
+                               2  Own house, rent lot
+                               3  Own house, rent-free lot with consent of owner
+                               4  Own house, rent-free lot without consent of owner
+                               5  Rent house/room including lot
+                               6  Rent free house and lot with consent of owner
+                               7  Rent free house and lot without consent of owner
+                               8  Not applicable
+SH201                  In the last 30 days, has any member of your hou  338    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+SH202                  Number of sick/injured persons                   339    2    N    I    1    0   No   No
+                               0:30  
+SH206                  Visited  health facility for consultation/advis  341    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+SH207                  How many of your HH members visited a health fa  342    2    N    I    1    0   No   No
+                               0:30  
+SH220                  Any member of your household has been confined   344    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+SH221A                 Number of persons confined in a hospital/clinic  345    2    N    I    1    0   No   No
+                               0:30  
+SH301A                 LGU Health programs you are  aware of - Free me  347    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH301B                 LGU Health programs you are  aware of - Free me  348    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH301C                 LGU Health programs you are  aware of - Free la  349    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH301D                 LGU Health programs you are  aware of - Free im  350    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH301E                 LGU Health programs you are  aware of - Free te  351    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH301F                 LGU Health programs you are  aware of - Free mi  352    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH301G                 LGU Health programs you are  aware of - Free de  353    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH301H                 LGU Health programs you are  aware of - Free de  354    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH301I                 LGU Health programs you are  aware of - Family   355    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH301J                 LGU Health programs you are  aware of - Health   356    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH301K                 LGU Health programs you are  aware of - Medical  357    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH301L                 LGU Health programs you are  aware of - Mental   358    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH301M                 LGU Health programs you are  aware of - Free me  359    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH301N                 LGU Health programs you are  aware of - Free de  360    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH301O                 LGU Health programs you are  aware of - Free pr  361    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH301X                 LGU Health programs you are  aware of - Other    362    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH301Z                 LGU Health programs you are  aware of - Don't k  363    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH302A                 Which programs initiated by your LGU or baranga  364    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH302B                 Which programs initiated by your LGU or baranga  365    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH302C                 Which programs initiated by your LGU or baranga  366    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH302D                 Which programs initiated by your LGU or baranga  367    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH302E                 Which programs initiated by your LGU or baranga  368    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH302F                 Which programs initiated by your LGU or baranga  369    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH302G                 Which programs initiated by your LGU or baranga  370    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH302H                 Which programs initiated by your LGU or baranga  371    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH302I                 Which programs initiated by your LGU or baranga  372    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH302J                 Which programs initiated by your LGU or baranga  373    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH302K                 Which programs initiated by your LGU or baranga  374    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH302L                 Which programs initiated by your LGU or baranga  375    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH302M                 Which programs initiated by your LGU or baranga  376    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH302N                 Which programs initiated by your LGU or baranga  377    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH302O                 Which programs initiated by your LGU or baranga  378    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH302X                 Which programs initiated by your LGU or baranga  379    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH302Y                 Which programs initiated by your LGU or baranga  380    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH302Z                 Which programs initiated by your LGU or baranga  381    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH303                  Did you avail /purchase any medicines or vitami  382    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH304                  Where did you avail/purchase the medicines and   383    2    N    I    1    0   No   No
+                               11  PUBLIC HOSPITAL
+                               12  PRIVATE HOSPITAL
+                               13  DRUGSTORE
+                               14  SARI-SARI STORE
+                               15  SUPERMARKET/GROCERY
+                               16  BARANGAY HEALTH STATION
+                               17  RURAL HEALTH UNIT / URBAN HEALTH CENTER
+                               18  Company clinic/Private doctor
+                               19  Relatives
+                               96  Other
+SH305                  Why did you usually avail/purchase the medicine  385    2    N    I    1    0   No   No
+                               11  ACCESSIBLE LOCATION/NEAR TO HOUSE/WORKPLACE
+                               12  HAS AFFORDABLE MEDICINES/VITAMINS
+                               13  HAS FRESH/NEW STOCKS
+                               14  MEDICINES/VITAMINS ARE ALWAYS AVAILABLE
+                               15  OFFERS FREE MEDICINES/VITAMINS
+                               16  OFFERS FREE MEDICAL CONSULTATIONS/SERVICES
+                               17  Branded medicines
+                               18  ADVISED BY THE DOCTOR
+                               96  OTHER
+SH306                  Have you ever heard of supplements and/or vitam  387    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH307                  Have you ever bought Mahalagang Paalala: or ay   388    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH308A                 Why did you buy supplements and vitamin product  389    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH308B                 Why did you buy supplements and vitamin product  390    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH308C                 Why did you buy supplements and vitamin product  391    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH308D                 Why did you buy supplements and vitamin product  392    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH308E                 Why did you buy supplements and vitamin product  393    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH308F                 Why did you buy supplements and vitamin product  394    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH308G                 Why did you buy supplements and vitamin product  395    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH308H                 Why did you buy supplements and vitamin product  396    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH308X                 Why did you buy supplements and vitamin product  397    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH401A                 Knowledge and opinions regarding some diseases   398    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH401B                 Knowledge and opinions regarding some diseases   399    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH401C                 Knowledge and opinions regarding some diseases   400    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH401D                 Knowledge and opinions regarding some diseases   401    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH401E                 Knowledge and opinions regarding some diseases   402    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH401F                 Knowledge and opinions regarding some diseases   403    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH401G                 Knowledge and opinions regarding some diseases   404    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH401H                 Knowledge and opinions regarding some diseases   405    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH401I                 Knowledge and opinions regarding some diseases   406    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH401J                 Knowledge and opinions regarding some diseases   407    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH401K                 Knowledge and opinions regarding some diseases   408    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH401L                 Knowledge and opinions regarding some diseases   409    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH401M                 Knowledge and opinions regarding some diseases   410    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH401N                 Knowledge and opinions regarding some diseases   411    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH401O                 Knowledge and opinions regarding some diseases   412    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH401P                 Knowledge and opinions regarding some diseases   413    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH401X                 Knowledge and opinions regarding some diseases   414    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH401Y                 Knowledge and opinions regarding some diseases   415    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH402                  Have you ever heard of a disease called cancer?  416    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH403A                 What kind of symptoms would make you suspect th  417    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH403B                 What kind of symptoms would make you suspect th  418    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH403C                 What kind of symptoms would make you suspect th  419    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH403D                 What kind of symptoms would make you suspect th  420    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH403E                 What kind of symptoms would make you suspect th  421    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH403F                 What kind of symptoms would make you suspect th  422    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH403G                 What kind of symptoms would make you suspect th  423    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH403H                 What kind of symptoms would make you suspect th  424    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH403I                 What kind of symptoms would make you suspect th  425    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH403J                 What kind of symptoms would make you suspect th  426    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH403K                 What kind of symptoms would make you suspect th  427    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH403X                 What kind of symptoms would make you suspect th  428    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH403Y                 What kind of symptoms would make you suspect th  429    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH403Z                 What kind of symptoms would make you suspect th  430    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH404                  Ever been screened/examined for cancer           431    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH405A                 What part of your body was screened - Blood      432    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH405B                 What part of your body was screened - Bone       433    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH405C                 What part of your body was screened - Breast     434    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH405D                 What part of your body was screened - Cervix     435    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH405E                 What part of your body was screened - Esophagus  436    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH405F                 What part of your body was screened - Larynx     437    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH405G                 What part of your body was screened - Liver      438    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH405H                 What part of your body was screened - Lung       439    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH405I                 What part of your body was screened - Mouth/ora  440    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH405J                 What part of your body was screened - Ovary      441    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH405K                 What part of your body was screened - Prostate   442    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH405L                 What part of your body was screened - Stomach    443    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH405M                 What part of your body was screened - Uterus     444    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH405N                 What part of your body was screened - Skin       445    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH405X                 What part of your body was screened - Other      446    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH405Z                 What part of your body was screened - Dno't kno  447    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH406A                 Where were you screened/examined - Public/priva  448    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH406B                 Where were you screened/examined - Heath center  449    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH406C                 Where were you screened/examined - Private clin  450    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH406D                 Where were you screened/examined - Company clin  451    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH406E                 Where were you screened/examined - School clini  452    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH406F                 Where were you screened/examined - Home/self/ho  453    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH406G                 Where were you screened/examined - Seminar on R  454    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH406H                 Where were you screened/examined - Mobile clini  455    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH406X                 Where were you screened/examined - Other         456    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH406Z                 Where were you screened/examined - Don't know    457    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH407                  Ever told more than once  your blood pressure i  458    1    N    I    1    0   No   No
+                               1  Yes
+                               0  No
+                               3  BLOOD PRESSURE WAS NEVER TAKEN
+SH408                  Ever heard of heart disease                      459    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH409A                 Who is likely to have heart disease - Those who  460    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH409B                 Who is likely to have heart disease - Those who  461    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH409C                 Who is likely to have heart disease - Those who  462    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH409D                 Who is likely to have heart disease - Those who  463    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH409E                 Who is likely to have heart disease - Those who  464    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH409F                 Who is likely to have heart disease - Those who  465    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH409G                 Who is likely to have heart disease - Those who  466    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH409H                 Who is likely to have heart disease - Those wit  467    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH409I                 Who is likely to have heart disease - Those who  468    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH409X                 Who is likely to have heart disease - Other      469    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH409Z                 Who is likely to have heart disease - Don't kno  470    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH410                  Have you ever heard of heart diabetes            471    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH411A                 Who is likely to have diabetes - Fat/obese peop  472    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH411B                 Who is likely to have diabetes - Heavy drinkers  473    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH411C                 Who is likely to have  diabetes - Heavy smokers  474    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH411D                 Who is likely to have diabetes - Older people/m  475    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH411E                 Who is likely to have diabetes - People who eat  476    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH411F                 Who is likely to have diabetes - Those who do n  477    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH411G                 Who is likely to have diabetes - Those with his  478    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH411X                 Who is likely to have diabetes - Other           479    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH411Z                 Who is likely to have diabetes - Don't know      480    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH501                  Ever heard of dengue fever                       481    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH502A                 How does dengue spread from one person to anoth  482    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH502B                 How does dengue spread from one person to anoth  483    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH502C                 How does dengue spread from one person to anoth  484    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH502D                 How does dengue spread from one person to anoth  485    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH502E                 How does dengue spread from one person to anoth  486    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH502F                 How does dengue spread from one person to anoth  487    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH502X                 How does dengue spread from one person to anoth  488    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH502Z                 How does dengue spread from one person to anoth  489    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH503                  Can dengue fever be prevented                    490    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH504A                 How can dengue fever be prevented - cleaning th  491    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH504B                 How can dengue fever be prevented - Remove bree  492    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH504C                 How can dengue fever be prevented - Spraying/fo  493    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH504D                 How can dengue fever be prevented - Stay away f  494    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH504E                 How can dengue fever be prevented - Take vitami  495    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH504F                 How can dengue fever be prevented - Use of mosq  496    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH504G                 How can dengue fever be prevented - Use of mosq  497    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH504H                 How can dengue fever be prevented - Use of mosq  498    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH504I                 How can dengue fever be prevented - Wash hands   499    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH504X                 How can dengue fever be prevented - Other        500    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH504Z                 How can dengue fever be prevented - Don't know   501    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH505A                 Have you ever had - Cough for 2+ weeks           502    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH505B                 Have you ever had - Cough for 4+ weeks           503    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH505C                 Have you ever had - Chest/back pain              504    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH505D                 Have you ever had - Blood in sputum              505    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH505E                 Have you ever had - Night sweats                 506    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH507                  Did you seek consultation or treatment for the   507    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH508A                 Why didn?t you seek treatment for the symptoms   508    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH508B                 Why didn?t you seek treatment for the symptoms   509    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH508C                 Why didn?t you seek treatment for the symptoms   510    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH508D                 Why didn?t you seek treatment for the symptoms   511    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH508E                 Why didn?t you seek treatment for the symptoms   512    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH508F                 Why didn?t you seek treatment for the symptoms   513    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH508G                 Why didn?t you seek treatment for the symptoms   514    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH508H                 Why didn?t you seek treatment for the symptoms   515    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH508I                 Why didn?t you seek treatment for the symptoms   516    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH508X                 Why didn?t you seek treatment for the symptoms   517    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               9  Missing
+SH509                  Have you ever heard of an illness called tuberc  518    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH510A                 Signs and symptoms you would think someone migh  519    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH510B                 Signs and symptoms you would think someone migh  520    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH510C                 Signs and symptoms you would think someone migh  521    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH510D                 Signs and symptoms you would think someone migh  522    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH510E                 Signs and symptoms you would think someone migh  523    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH510F                 Signs and symptoms you would think someone migh  524    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH510G                 Signs and symptoms you would think someone migh  525    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH510H                 Signs and symptoms you would think someone migh  526    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH510I                 Signs and symptoms you would think someone migh  527    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH510J                 Signs and symptoms you would think someone migh  528    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH510K                 Signs and symptoms you would think someone migh  529    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH510L                 Signs and symptoms you would think someone migh  530    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH510M                 Signs and symptoms you would think someone migh  531    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH510N                 Signs and symptoms you would think someone migh  532    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH510O                 Signs and symptoms you would think someone migh  533    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH510X                 Signs and symptoms you would think someone migh  534    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH510Z                 Signs and symptoms you would think someone migh  535    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH511A                 What do you think is the cause of TB - Microbes  536    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH511B                 What do you think is the cause of TB - Inherite  537    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH511C                 What do you think is the cause of TB - Lifestyl  538    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH511D                 What do you think is the cause of TB - Smoking   539    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH511E                 What do you think is the cause of TB - Alcohol   540    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH511F                 What do you think is the cause of TB - Fatigue   541    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH511G                 What do you think is the cause of TB - Malnutri  542    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH511H                 What do you think is the cause of TB - Unhygien  543    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH511I                 What do you think is the cause of TB - Pollutio  544    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH511J                 What do you think is the cause of TB - Acquired  545    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH511K                 What do you think is the cause of TB - Untreate  546    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH511L                 What do you think is the cause of TB - Weak imm  547    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH511M                 What do you think is the cause of TB - Stress    548    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH512H                 What do you think is the cause of TB - Blood tr  549    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH512I                 What do you think is the cause of TB - Same blo  550    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH512J                 What do you think is the cause of TB - Inherite  551    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH511X                 What do you think is the cause of TB - Other     552    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH511Z                 What do you think is the cause of TB - Don't kn  553    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH512A                 How does TB spread from one person to another -  554    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH512B                 How does TB spread from one person to another -  555    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH512C                 How does TB spread from one person to another -  556    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH512D                 How does TB spread from one person to another -  557    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH512E                 How does TB spread from one person to another -  558    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH512F                 How does TB spread from one person to another -  559    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH512G                 How does TB spread from one person to another -  560    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH512X                 How does TB spread from one person to another -  561    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH512Z                 How does TB spread from one person to another -  562    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+SH513                  Can tuberculosis be cured?                       563    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+SH514                  Would you be willing to work with someone who h  564    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  DON'T KNOW/NOT SURE/DEPENDS
+SH515                  If a member of your family got TB, would you wa  565    1    N    I    1    0   No   No
+                               0  No
+                               1  Yes
+                               8  DON'T KNOW/NOT SURE/DEPENDS
+SHNUMDV                Line number of woman selected for safety module  566    2    N    I    1    0   No  Yes
+                               0:59  
+HVIDX                  Line number                                      568    2    N    I   21    0   No   No
+                               1:90  
+HV101                  Relationship to head                             610    2    N    I   21    0   No   No
+                               1   Head
+                               2   Wife or husband
+                               3   Son/daughter
+                               4   Son/daughter-in-law
+                               5   Grandchild
+                               6   Parent
+                               7   Parent-in-law
+                               8   Brother/sister
+                               9   Co-spouse
+                               10  Other relative
+                               11  Adopted/foster child
+                               12  Not related
+                               13  Niece/nephew by blood
+                               14  Niece/nephew by marriage
+                               98  Don't know
+                           (m) 99  Missing
+HV102                  Usual resident                                   652    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+HV103                  Slept last night                                 673    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+HV104                  Sex of household member                          694    1    N    I   21    0   No   No
+                               1  Male
+                               2  Female
+                           (m) 9  Missing
+HV105                  Age of household members                         715    2    N    I   21    0   No   No
+                               0:94  
+                               95    95+
+                               98    Don't know
+                           (m) 99    Missing
+HV106                  Highest educational level attained               757    1    N    I   21    0   No   No
+                               0  No education, preschool
+                               1  Primary
+                               2  Secondary
+                               3  Higher
+                               8  Don't know
+                           (m) 9  Missing
+HV107                  Highest year of education completed              778    2    N    I   21    0   No   No
+                               0:20  
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+HV108                  Education completed in single years              820    2    N    I   21    0   No   No
+                               0:25  
+                               97    Inconsistent
+                               98    Don't know
+                           (m) 99    Missing
+HV109                  Educational attainment                           862    1    N    I   21    0   No   No
+                               0  No education
+                               1  Incomplete primary
+                               2  Complete primary
+                               3  Incomplete secondary
+                               4  Complete secondary
+                               5  Higher
+                               8  Don't know
+                           (m) 9  Missing
+HV110                  NA - Member still in school                      883    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+HV111                  NA - Mother alive                                904    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV112                  NA - Mother's line number                        925    2    N    I   21    0   No   No
+                               0     Mother not in household
+                               1:90  
+                           (m) 99    Missing
+                          (na)       Not applicable
+HV113                  NA - Father alive                                967    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV114                  NA - Father's line number                        988    2    N    I   21    0   No   No
+                               0     Father not in household
+                               1:90  
+                           (m) 99    Missing
+                          (na)       Not applicable
+HV115                  Current marital status                          1030    1    N    I   21    0   No   No
+                               0  Never married
+                               1  Married
+                               2  Living together
+                               3  Widowed
+                               4  Divorced
+                               5  Not living together
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV116                  Currently, formerly, never married              1051    1    N    I   21    0   No   No
+                               0  Never married
+                               1  Currently married
+                               2  Formerly/ever married
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV117                  Eligibility for female interview                1072    1    N    I   21    0   No   No
+                               0  Not eligible
+                               1  Eligible
+                          (na)    Not applicable
+HV118                  NA - Eligibility for male interview             1093    1    N    I   21    0   No   No
+                               0  Not eligible
+                               1  Eligible
+                          (na)    Not applicable
+HV120                  Children eligibility for height/weight and hemo 1114    1    N    I   21    0   No   No
+                               0  Not eligible
+                               1  Eligible
+                          (na)    Not applicable
+HV121                  Member attended school during current school ye 1135    1    N    I   21    0   No   No
+                               0  No
+                               1  Currently attending
+                               2  Attended at some time
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV122                  Educational level during current school year    1156    1    N    I   21    0   No   No
+                               0  No education, preschool
+                               1  Primary
+                               2  Secondary
+                               3  Higher
+                               8  Don't know
+                           (m) 9  Missing
+HV123                  Grade of education during current school year   1177    2    N    I   21    0   No   No
+                               0:20  
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+HV124                  Education in single years - current school year 1219    2    N    I   21    0   No   No
+                               0:25  
+                               97    Inconsistent
+                               98    Don't know
+                           (m) 99    Missing
+HV125                  NA - Member attended school during previous sch 1261    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+HV126                  NA - Educational level during previous school y 1282    1    N    I   21    0   No   No
+                               0  No education, preschool
+                               1  Primary
+                               2  Secondary
+                               3  Higher
+                               8  Don't know
+                           (m) 9  Missing
+HV127                  NA - Grade of education during previous school  1303    2    N    I   21    0   No   No
+                               0:20  
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+HV128                  NA - Education in single years - previous schoo 1345    2    N    I   21    0   No   No
+                               0:20  
+                               97    Inconsistent
+                               98    Don't know
+                           (m) 99    Missing
+HV129                  NA - School attendance status                   1387    1    N    I   21    0   No   No
+                               0  Never attended
+                               1  Entered school
+                               2  Advanced
+                               3  Repeating
+                               4  Dropout
+                               5  Left school 2+ years ago
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HV140                  Member has a birth certificate                  1408    1    N    I   21    0   No   No
+                               0  Neither certificate or registered
+                               1  Has certificate
+                               2  Registered
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+IDXH4                  Index to Household Schedule                     1429    2    N    I   21    0   No   No
+                               1:90  
+SHCOL2A                Column number                                   1471    2    N    I   21    0   No   No
+SH09A                  Covered by PhiHealth                            1513    1    N    I   21    0   No   No
+                               1  Yes
+                               0  No
+                               8  Don't know
+SH09BA                 PhilHealth - Formal economy                     1534    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH09BB                 PhilHealth - Informal economy                   1555    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH09BC                 PhilHealth - Indigents/ NHTS-PR                 1576    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH09BD                 PhilHealth - Sponsored                          1597    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH09BE                 PhilHealth - Lifetime members                   1618    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH09BF                 PhilHealth - Senior citizen                     1639    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH09BG                 PhilHealth - Overseas Filipino member           1660    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH09BH                 GSIS                                            1681    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH09BI                 SSS                                             1702    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH09BJ                 Other private insurance /HMO/ Pre-need insuranc 1723    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH09BX                 Other                                           1744    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH17L                  Level of education                              1765    2    N    I   21    0   No   No
+                               0   Preschool
+                               1   Elementary
+                               2   High school
+                               3   Post secondary
+                               4   K to 12 program
+                               5   College
+                               6   SPED
+                               7   Post baccaulaureate
+                               98  Don't know
+SH19L                  Level of education                              1807    2    N    I   21    0   No   No
+                               0   Preschool
+                               3   Post secondary
+                               4   K to 12 program
+                               5   College
+                               6   SPED
+                               7   Post baccaulaureate
+                               98  Don't know
+SH203A                 Line number from column 1 in HH schedule        1849    2    N    I   21    0   No   No
+                               0:50  
+SH204AA                Illness or injury - Diabetes                    1891    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204AB                Illness or injury - Cancer                      1912    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204AC                Illness or injury - Hypertension                1933    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204AD                Illness or injury - Tuberculosis (TB)           1954    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204AE                Illness or injury - Acute respitatory infection 1975    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204AF                Illness or injury - Acute gastroenteritis       1996    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204AG                Illness or injury - Common colds, coughs        2017    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204AH                Illness or injury - Cut.wound                   2038    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204AI                Illness or injury - Burn                        2059    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204AJ                Illness or injury - Fracture/broken bone        2080    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204AK                Illness or injury - Dislocation slipped disk    2101    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204AL                Illness or injury - Surgery                     2122    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204AM                Illness or injury - Urinary track infection     2143    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204AN                Illness or injury - Arthritis                   2164    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204AO                Illness or injury - Diarrhia                    2185    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204AP                Illness or injury - Allergy                     2206    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204AQ                Illness or injury - Heart disease               2227    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204AR                Illness or injury - Stomach/head ache           2248    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204AS                Illness or injury - Chicken pox                 2269    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204AT                Illness or injury - Kidney problem              2290    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204AU                Illness or injury - Dengue                      2311    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204AV                Illness or injury - Tonsilitis                  2332    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204AW                Illness or injury - Asthma                      2353    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204AX                Illness or injury - Other                       2374    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH204C                 Was illness diagnosed by a doctor: Diabetes     2395    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+SH204E                 Was illness diagnosed by a doctor: Cancer       2416    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+SH204G                 Was illness diagnosed by a doctor: Hypertension 2437    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+SH204I                 Was illness diagnosed by a doctor: Tuberculosis 2458    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+SH204K                 Was illness diagnosed by a doctor: Acute respir 2479    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+SH204M                 Was illness diagnosed by a doctor: Acute gastro 2500    1    N    I   21    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+HA0                    NA - Index to Household Schedule                2521    2    N    I    2    0   No   No
+                               1:90  
+HA1                    NA - Woman's age in years                       2525    2    N    I    2    0   No   No
+                               15:49  
+HA2                    NA - Woman's weight in kilograms (1 decimal)    2529    4    N    I    2    0   No   No
+                               200:2000  
+                               9994      Not present
+                               9995      Refused
+                               9996      Other
+                           (m) 9999      Missing
+                          (na)           Not applicable
+HA3                    NA - Woman's height in centimeters (1 decimal)  2537    4    N    I    2    0   No   No
+                               500:2200  
+                               9994      Not present
+                               9995      Refused
+                               9996      Other
+                           (m) 9999      Missing
+                          (na)           Not applicable
+HA4                    NA - Height/Age percentile                      2545    4    N    I    2    0   No   No
+                               0:9997  
+                               9998    Flagged cases
+                           (m) 9999    Missing
+                          (na)         Not applicable
+HA5                    NA - Height/Age standard deviation              2553    4    N    I    2    0   No   No
+                               -600:600  
+                               9998      Flagged cases
+                           (m) 9999      Missing
+                          (na)           Not applicable
+HA6                    NA - Height/Age percent ref. median             2561    5    N    I    2    0   No   No
+                               7500:12000  
+                               99998       Flagged cases
+                           (m) 99999       Missing
+                          (na)             Not applicable
+HA11                   NA - Weight/Height standard deviation (DHS)     2571    4    N    I    2    0   No   No
+                               -400:600  
+                               9998      Flagged cases
+                           (m) 9999      Missing
+                          (na)           Not applicable
+HA12                   NA - Weight/Height percent ref. median (DHS)    2579    5    N    I    2    0   No   No
+                               5500:25000  
+                               99998       Flagged cases
+                           (m) 99999       Missing
+                          (na)             Not applicable
+HA12A                  NA - Weight/Height percent ref. median (Fog)    2589    5    N    I    2    0   No   No
+                               6000:30000  
+                               99998       Flagged cases
+                           (m) 99999       Missing
+                          (na)             Not applicable
+HA12B                  NA - Weight/Height percent ref. median (WHO)    2599    5    N    I    2    0   No   No
+                               6000:30000  
+                               99998       Flagged cases
+                           (m) 99999       Missing
+                          (na)             Not applicable
+HA13                   NA - Result of measurement - height/weight      2609    1    N    I    2    0   No   No
+                               0  Measured
+                               3  Not present
+                               4  Refused
+                               6  Other
+                           (m) 9  Missing
+HA21                   NA - Fieldworker measurer code                  2611    5    N    I    2    0   No   No
+HA32                   NA - Date of birth (CMC)                        2621    4    N    I    2    0   No   No
+HA33                   NA - Completeness of HA32 information           2629    1    N    I    2    0   No   No
+                               0  Month, year and day
+                               1  Month and year - information complete
+                               2  Month and age - year imputed
+                               3  Year and age - month imputed
+                               4  Year and age - year ignored
+                               5  Year - age/month imputed
+                               6  Age - year/month imputed
+                               7  Month - age/year imputed
+                               8  None - all imputed
+                          (na)    Not applicable
+HA35                   NA - Smoking (cigarettes in last 24 hours)      2631    2    N    I    2    0   No   No
+                               0     Doesn't smoke
+                               1:79  
+                               80    80+
+                               94    Smokes pipes, cigars, etc
+                           (m) 99    Missing
+                          (na)       Not applicable
+HA40                   NA - Body Mass Index                            2635    4    N    I    2    0   No   No
+                               1200:6000  
+                               9998       Flagged cases
+                           (m) 9999       Missing
+                          (na)            Not applicable
+HA41                   NA - Rohrer's index                             2643    4    N    I    2    0   No   No
+                               600:7000  
+                               9998      Flagged cases
+                           (m) 9999      Missing
+                          (na)           Not applicable
+HA50                   NA - Under age 18                               2651    1    N    I    2    0   No   No
+                               1  Under age 18
+                               2  Age 18 or older
+                           (m) 9  Missing
+                          (na)    Not applicable
+HA51                   NA - Line number of parent/caretaker            2653    2    N    I    2    0   No   No
+                               0     Not in household
+                               1:50  
+                           (m) 99    Missing
+                          (na)       Not applicable
+HA52                   NA - Read consent statement - hemoglobin        2657    1    N    I    2    0   No   No
+                               1  Granted
+                               2  Parent/other responsible refused
+                               3  Respondent refused
+                               4  Adult/parent not present
+                               5  Minor not present
+                           (m) 9  Missing
+                          (na)    Not applicable
+HA53                   NA - Hemoglobin level (g/dl - 1 decimal)        2659    3    N    I    2    0   No   No
+                               0:900  
+                               994    Not present
+                               995    Refused
+                               996    Other
+                           (m) 999    Missing
+                          (na)        Not applicable
+HA54                   NA - Currently pregnant                         2665    1    N    I    2    0   No   No
+                               0  No/don't know
+                               1  Yes
+                           (m) 9  Missing
+                          (na)    Not applicable
+HA55                   NA - Result of measurement - hemoglobin         2667    1    N    I    2    0   No   No
+                               0  Measured
+                               3  Not present
+                               4  Refused
+                               6  Other
+                           (m) 9  Missing
+                          (na)    Not applicable
+HA56                   NA - Hemoglobin level adjusted for altitude and 2669    3    N    I    2    0   No   No
+                               997  Inconsistent
+                           (m) 999  Missing
+                          (na)      Not applicable
+HA57                   NA - Anemia level                               2675    1    N    I    2    0   No   No
+                               1  Severe
+                               2  Moderate
+                               3  Mild
+                               4  Not anemic
+                           (m) 9  Missing
+                          (na)    Not applicable
+HA58                   NA - Agrees to referral - anemia                2677    1    N    I    2    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+                          (na)    Not applicable
+HA60                   NA - Marital status                             2679    1    N    I    2    0   No   No
+                               1  Never in union
+                               2  Other
+                           (m) 9  Missing
+                          (na)    Not applicable
+HA61                   NA - Read consent statement - HIV               2681    1    N    I    2    0   No   No
+                               1  Granted
+                               2  Parent/other responsible refused
+                               3  Respondent refused
+                               4  Adult/parent not present
+                               5  Minor not present
+                               6  Sample not tested/lost/not enough DBS
+                           (m) 9  Missing
+                          (na)    Not applicable
+HA62                   NA - Bar code for HIV blood sample              2683    5   AN    I    2    0   No   No
+                               99992  Woman's interview incomplete or woman is not de-facto
+                               99993  Sample damaged/insufficient/not found in lab
+                               99994  Not present
+                               99995  Refused
+                               99996  Other
+                               ?      Missing
+HA63                   NA - Result of measurement - HIV                2693    1    N    I    2    0   No   No
+                               1  Blood taken
+                               2  Not present
+                               3  Refused
+                               4  Sample not tested/lost/damaged/insufficient
+                               5  Not enough DBS to complete protocol
+                               6  Other
+                           (m) 9  Missing
+                          (na)    Not applicable
+HA64                   NA - Consent for additional tests               2695    1    N    I    2    0   No   No
+                               1  Granted
+                               2  Parent/other responsible refused
+                               3  Respondent refused
+                               6  Sample not tested/lost/not enough DBS
+                           (m) 9  Missing
+                          (na)    Not applicable
+HA65                   NA - Result of woman's individual interview     2697    1    N    I    2    0   No   No
+                               1  Completed
+                               2  Not at home
+                               3  Postponed
+                               4  Refused
+                               5  Partly completed
+                               6  Incapacitated
+                               7  Other
+                          (na)    Not applicable
+HA66                   NA - Woman's highest educational level          2699    1    N    I    2    0   No   No
+                               0  No education
+                               1  Primary
+                               2  Secondary
+                               3  Higher
+                               8  Don't know
+                           (m) 9  Missing
+HA67                   NA - Woman's highest year of education          2701    2    N    I    2    0   No   No
+                               98  Don't know
+                           (m) 99  Missing
+                          (na)     Not applicable
+HA68                   NA - Woman's highest educational level (for pre 2705    1    N    I    2    0   No   No
+                               0  Labels to be populated according to country
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HA69                   NA - HIV weight (6 decimals)                    2707    8    N    I    2    0   No   No
+HA70                   NA - Interviewer that took blood for HIV testin 2723    5    N    I    2    0   No   No
+HC0                    NA - Index to Household Schedule                2733    2    N    I    2    0   No   No
+                               1:90  
+HC1                    NA - Child's age in months                      2737    2    N    I    2    0   No   No
+                               0:60  
+HC1A                   NA - Child's age in days                        2741    5    N    I    2    0   No   No
+                               0:2500  
+HC2                    NA - Child's weight in kilograms (1 decimal)    2751    4    N    I    2    0   No   No
+                               10:9990  
+                               9994     Not present
+                               9995     Refused
+                               9996     Other
+                           (m) 9999     Missing
+                          (na)          Not applicable
+HC3                    NA - Child's height in centimeters (1 decimal)  2759    4    N    I    2    0   No   No
+                               100:2000  
+                               9994      Not present
+                               9995      Refused
+                               9996      Other
+                           (m) 9999      Missing
+                          (na)           Not applicable
+HC4                    NA - Height/Age percentile                      2767    4    N    I    2    0   No   No
+                               0:9997  
+                               9998    Flagged cases
+                           (m) 9999    Missing
+                          (na)         Not applicable
+HC5                    NA - Height/Age standard deviation              2775    4    N    I    2    0   No   No
+                               -600:600  
+                               9998      Flagged cases
+                           (m) 9999      Missing
+                          (na)           Not applicable
+HC6                    NA - Height/Age percent of ref. median          2783    5    N    I    2    0   No   No
+                               7500:15000  
+                               99998       Flagged cases
+                           (m) 99999       Missing
+                          (na)             Not applicable
+HC7                    NA - Weight/Age percentile                      2793    4    N    I    2    0   No   No
+                               0:9997  
+                               9998    Flagged cases
+                           (m) 9999    Missing
+                          (na)         Not applicable
+HC8                    NA - Weight/Age standard deviation              2801    4    N    I    2    0   No   No
+                               -600:600  
+                               9998      Flagged cases
+                           (m) 9999      Missing
+                          (na)           Not applicable
+HC9                    NA - Weight/Age percent of ref. median          2809    5    N    I    2    0   No   No
+                               4000:19000  
+                               99998       Flagged cases
+                           (m) 99999       Missing
+                          (na)             Not applicable
+HC10                   NA - Weight/Height percentile                   2819    4    N    I    2    0   No   No
+                               0:9997  
+                               9998    Flagged cases
+                           (m) 9999    Missing
+                          (na)         Not applicable
+HC11                   NA - Weight/Height standard deviation           2827    4    N    I    2    0   No   No
+                               -600:600  
+                               9998      Flagged cases
+                           (m) 9999      Missing
+                          (na)           Not applicable
+HC12                   NA - Weight/Height percent of ref. median       2835    5    N    I    2    0   No   No
+                               5500:19000  
+                               99998       Flagged cases
+                           (m) 99999       Missing
+                          (na)             Not applicable
+HC13                   NA - Result of measurement - height/weight      2845    1    N    I    2    0   No   No
+                               0  Measured
+                               3  Not present
+                               4  Refused
+                               6  Other
+                           (m) 9  Missing
+HC15                   NA - Height: lying or standing                  2847    1    N    I    2    0   No   No
+                               0  Not measured
+                               1  Lying
+                               2  Standing
+                           (m) 9  Missing
+                          (na)    Not applicable
+HC16                   NA - Day of birth                               2849    2    N    I    2    0   No   No
+                               1:31  
+                               97    Inconsistent
+                               98    Don't know
+                           (m) 99    Missing
+HC17                   NA - Date measured (day)                        2853    2    N    I    2    0   No   No
+                               1:31  
+                          (na)       Not applicable
+HC18                   NA - Date measured (month)                      2857    2    N    I    2    0   No   No
+                               1:12  
+                          (na)       Not applicable
+HC19                   NA - Date measured (year)                       2861    4    N    I    2    0   No   No
+                               2015:2025  
+                          (na)            Not applicable
+HC20                   NA - Century Day Code (CDC) of measurement      2869    5    N    I    2    0   No   No
+HC21                   NA - Fieldworker measurer code                  2879    5    N    I    2    0   No   No
+HC27                   NA - Sex                                        2889    1    N    I    2    0   No   No
+                               1  Male
+                               2  Female
+                           (m) 9  Missing
+HC30                   NA - Month of birth                             2891    2    N    I    2    0   No   No
+                               1:12  
+                               97    Inconsistent
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+HC31                   NA - Year of birth                              2895    4    N    I    2    0   No   No
+                               2011:2025  
+                               9997       Inconsistent
+                               9998       Don't know
+                           (m) 9999       Missing
+                          (na)            Not applicable
+HC32                   NA - Date of birth (CMC)                        2903    4    N    I    2    0   No   No
+HC32A                  NA - Century Day Code (CDC) of birth            2911    5    N    I    2    0   No   No
+HC33                   NA - Completeness of HC32 information           2921    1    N    I    2    0   No   No
+                               0  Month, year and day
+                               1  Month and year - information complete
+                               2  Month and age - year imputed
+                               3  Year and age - month imputed
+                               5  Year - age/month imputed
+                               6  Age - year/month imputed
+                               7  Month - age/year imputed
+                               8  None - all imputed
+                          (na)    Not applicable
+HC51                   NA - Line number of parent/caretaker            2923    2    N    I    2    0   No   No
+                               0     Not in household
+                               1:50  
+                           (m) 99    Missing
+                          (na)       Not applicable
+HC52                   NA - Read consent statement - hemoglobin        2927    1    N    I    2    0   No   No
+                               1  Granted
+                               2  Refused
+                               3  Not present/other
+                           (m) 9  Missing
+                          (na)    Not applicable
+HC53                   NA - Hemoglobin level (g/dl - 1 decimal)        2929    3    N    I    2    0   No   No
+                               10:990  
+                               994     Not present
+                               995     Refused
+                               996     Other
+                           (m) 999     Missing
+                          (na)         Not applicable
+HC55                   NA - Result of measurement - hemoglobin         2935    1    N    I    2    0   No   No
+                               0  Measured
+                               3  Not present/other
+                               4  Refused
+                               6  Other
+                           (m) 9  Missing
+                          (na)    Not applicable
+HC56                   NA - Hemoglobin level adjusted for altitude (g/ 2937    3    N    I    2    0   No   No
+                               997  Inconsistent
+                           (m) 999  Missing
+                          (na)      Not applicable
+HC57                   NA - Anemia level                               2943    1    N    I    2    0   No   No
+                               1  Severe
+                               2  Moderate
+                               3  Mild
+                               4  Not anemic
+                           (m) 9  Missing
+                          (na)    Not applicable
+HC58                   NA - Agrees to referral - anemia                2945    1    N    I    2    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+HC60                   NA - Mother's line number (woman's questionnair 2947    3    N    I    2    0   No   No
+                               1:50  
+                               993   Mother not de facto
+                               994   Incomplete woman's interview
+                               995   Not in household
+                           (m) 999   Missing
+                          (na)       Not applicable
+HC61                   NA - Mother's highest educational level         2953    1    N    I    2    0   No   No
+                               0  No education
+                               1  Primary
+                               2  Secondary
+                               3  Higher
+                               8  Don't know
+                           (m) 9  Missing
+HC62                   NA - Mother's highest year of education         2955    2    N    I    2    0   No   No
+                               98  Don't know
+                           (m) 99  Missing
+                          (na)     Not applicable
+HC63                   NA - Preceding birth interval (months)          2959    3    N    I    2    0   No   No
+                           (m) 999  Missing
+                          (na)      Not applicable
+HC64                   NA - Birth order number                         2965    2    N    I    2    0   No   No
+                               1:20  
+                           (m) 99    Missing
+HC68                   NA - Mother's highest educational level (for pr 2969    1    N    I    2    0   No   No
+                               0  Labels to be populated according to country
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+HC70                   NA - Height/Age standard deviation (new WHO)    2971    4    N    I    2    0   No   No
+                               -600:600  
+                               9996      Height out of plausible limits
+                               9997      Age in days out of plausible limits
+                               9998      Flagged cases
+                           (m) 9999      Missing
+                          (na)           Not applicable
+HC71                   NA - Weight/Age standard deviation (new WHO)    2979    4    N    I    2    0   No   No
+                               -600:500  
+                               9996      Height out of plausible limits
+                               9997      Age in days out of plausible limits
+                               9998      Flagged cases
+                           (m) 9999      Missing
+                          (na)           Not applicable
+HC72                   NA - Weight/Height standard deviation (new WHO) 2987    4    N    I    2    0   No   No
+                               -600:500  
+                               9996      Height out of plausible limits
+                               9997      Age in days out of plausible limits
+                               9998      Flagged cases
+                           (m) 9999      Missing
+                          (na)           Not applicable
+HC73                   NA - BMI standard deviation (new WHO)           2995    4    N    I    2    0   No   No
+                               -600:500  
+                               9996      Height out of plausible limits
+                               9997      Age in days out of plausible limits
+                               9998      Flagged cases
+                           (m) 9999      Missing
+                          (na)           Not applicable
+IDXH7                  Index to Household Schedule                     3003    2    N    I    7    0   No   No
+                               1:90  
+SH208A                 Line number                                     3017    2    N    I    7    0   No   No
+                               0:20  
+SH209                  Why he/she visit health facility for consultati 3031    2    N    I    7    0   No   No
+                               11  Sick/injured
+                               12  Prenatal/postnatal checkup
+                               13  Gave birth
+                               14  Dental
+                               15  Medical check-up
+                               16  Medical requirement
+                               17  4Ps requirement
+                               96  Other
+SH210                  Where was the consultation                      3045    2    N    I    7    0   No   No
+                               21  Regional hosp/medical center
+                               22  Provincial hospital
+                               23  District hospital
+                               24  Municipal hospital
+                               25  RHU/Urban health ctr/lying-in
+                               26  Barangay health st
+                               27  Mobile clinic
+                               28  Other public
+                               31  Private hospital
+                               32  Private Lying-in clinic/birthing home
+                               33  Private clinic
+                               34  Private pharmacy
+                               35  Private Mobile clinic
+                               36  Other private
+                               41  Hilot/herbalists
+                               42  Therapeutic massage center
+                               46  Other alternative healing
+                               51  Shop selling drugs/market
+                               52  Faith healer
+                               96  Other
+SH211                  Advise for jospitalization/ confinement         3059    1    N    I    7    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH212                  Was he/she confined in the hospital/clinic      3066    1    N    I    7    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+SH213A                 Facility far - Reasons not confined hosp/clinic 3073    1    N    I    7    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH213B                 No money                                        3080    1    N    I    7    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH213C                 Worried about treatment cost                    3087    1    N    I    7    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH213D                 Home remedy is available                        3094    1    N    I    7    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH213E                 Health facility is not PhilHealth acredited     3101    1    N    I    7    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH213F                 No need/regular checkup only                    3108    1    N    I    7    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH213X                 Other                                           3115    1    N    I    7    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH215H                 How long took travel from home to health facili 3122    2    N    I    7    0   No   No
+                               0     Less than one hour
+                               1:15  
+                               98    Don't know
+SH215M                 How long took travel from home to health facili 3136    2    N    I    7    0   No   No
+                               0:59  
+                               98    Don't know
+SH216                  Cost of travel to health facility in PHP        3150    6    N    I    7    0   No   No
+                               1:999994  
+                               0         No cost/free
+                               999995    In kind only
+                               999998    Don't know
+SH217A                 Cost of treatment at facility in PHP            3192    6    N    I    7    0   No   No
+                               1:999993  
+                               0         No cost/free
+                               999994    Still in hospital
+                               999995    In kind only
+                               999998    Don't know
+SH217B                 Amount in PHP spent (donations) in consultation 3234    6    N    I    7    0   No   No
+                               1:999993  
+                               0         No cost/free
+                               999994    Still in hospital
+                               999995    In kind only
+                               999998    Don't know
+SH218A                 Method of payment: Salary                       3276    1    N    I    7    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH218B                 Method of payment: Loan                         3283    1    N    I    7    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH218C                 Method of payment: Savings                      3290    1    N    I    7    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH218D                 Method of payment: Donation                     3297    1    N    I    7    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH218E                 Method of payment: PhilHealth                   3304    1    N    I    7    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH218F                 Method of payment: SSS/GSIS/ECC                 3311    1    N    I    7    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH218G                 Method of payment: Insurance                    3318    1    N    I    7    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+SH218X                 Method of payment: Other                        3325    1    N    I    7    0   No   No
+                               0  No
+                               1  Yes
+                           (m) 9  Missing
+IDXH8                  Index to Household Schedule                     3332    2    N    I    5    0   No   No
+                               1:90  
+SHCOL2C                Column number                                   3342    2    N    I    5    0   No   No
+SH222A                 Line number from column 1 of HH schedule        3352    2    N    I    5    0   No   No
+                               0:50  
+SH223                  Where was he/she confined                       3362    2    N    I    5    0   No   No
+                               21  Regional hosp/medical center
+                               22  Provincial hospital
+                               23  District hospital
+                               24  Municipal hospital
+                               25  Municipal health center
+                               31  Private hospital
+                               32  Private Lying-in clinic/birthing home
+                               33  Private clinic
+                               96  Other
+                               98  Don't know
+SH224                  Why was he/she confined in a hospital/clinic    3372    1    N    I    5    0   No   No
+                               1  Sick/injured
+                               2  Gave birth
+                               3  Executive check-up
+                               6  Other
+SH225                  Duration of confinement in days                 3377    3    N    I    5    0   No   No
+                               1:100  
+                               994    Still confined
+SH228A                 Where medicines bought from any pharmacy apart  3392    1    N    I    5    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+SH228B                 How much was paid for medicines  (PHP)          3397    6    N    I    5    0   No   No
+                               0:999997  
+                               999998    Don't know
+SH228C                 Where services paid for in any laboratory, apar 3427    1    N    I    5    0   No   No
+                               0  No
+                               1  Yes
+                               8  Don't know
+                           (m) 9  Missing
+SH228D                 How much was paid for Lab services (PHP)        3432    6    N    I    5    0   No   No
+SH230A                 How much for the services/medicine combined was 3462    6    N    I    5    0   No   No
+SH230B                 How much for the services/medicine combined was 3492    6    N    I    5    0   No   No
+SH231A                 How much was the total hospital bill for last c 3522    6    N    I    5    0   No   No
+                               1:999993  
+                               0         No cost/free
+                               999994    Still in hospital
+                               999995    In kind only
+                               999998    Don't know
+SH231B                 How much was the total hospital bill for last c 3552    6    N    I    5    0   No   No
+                               1:999993  
+                               0         No cost/free
+                               999994    Still in hospital
+                               999995    In kind only
+                               999998    Don't know
+SH232A                 How much of the total hospital bill was paid fo 3582    6    N    I    5    0   No   No
+SH232B                 How much was the total hospital bill for last c 3612    6    N    I    5    0   No   No
+SH233A                 Why he/she did not get Philhealth benefits - No 3642    1    N    I    5    0   No   No
+                               0  No
+                               1  Yes
+SH233B                 Why he/she did not get Philhealth benefits - Ph 3647    1    N    I    5    0   No   No
+                               0  No
+                               1  Yes
+SH233C                 Why he/she did not get Philhealth benefits - Pr 3652    1    N    I    5    0   No   No
+                               0  No
+                               1  Yes
+SH233D                 Why he/she did not get Philhealth benefits - To 3657    1    N    I    5    0   No   No
+                               0  No
+                               1  Yes
+SH233E                 Why he/she did not get Philhealth benefits - Li 3662    1    N    I    5    0   No   No
+                               0  No
+                               1  Yes
+SH233F                 Why he/she did not get Philhealth benefits - Cl 3667    1    N    I    5    0   No   No
+                               0  No
+                               1  Yes
+SH233X                 Why he/she did not get Philhealth benefits - Ot 3672    1    N    I    5    0   No   No
+                               0  No
+                               1  Yes
+SH233Z                 Why he/she did not get Philhealth benefits - Do 3677    1    N    I    5    0   No   No
+                               0  No
+                               1  Yes
+--------------------------------------------------------------------------------------------------------------
+Relation Name         Primary               Linked by             Secondary             Linked by
+--------------------------------------------------------------------------------------------------------------
