@@ -1,5 +1,4 @@
-,wealth_index,education_completed_yrs,electricity_access
-Cluster number,,,
+cluster_number,wealth_index,education_completed_yrs,electricity_access
 1,-31881.608695652172,9.391304347826088,0.9130434782608695
 2,-2855.375,9.708333333333334,0.9583333333333334
 3,-57647.04761904762,8.428571428571429,0.8571428571428571
