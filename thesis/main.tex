@@ -1,0 +1,75 @@
+\documentclass[final]{nip}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[square,numbers,sort&compress]{natbib}
+\usepackage{verbatim}
+\usepackage[centertags]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{newlfont}
+\usepackage{subfig}
+\usepackage{url}
+\usepackage{textcomp}
+\usepackage[usenames, dvipsnames]{color}  	
+\usepackage{soul}							
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage[margin=1cm]{caption}
+
+%% Symbols
+\newcommand{\hatb}[1]{\hat{\mathbf{#1}}}
+\newcommand{\vecb}[1]{\vec{\mathbf{#1}}}
+\def\d{\mathrm{d}}
+\newcommand{\tx}[1]{\mathrm{#1}}
+%\renewcommand{\vec}[1]{ \mathbf{#1}}
+
+%% Delimeters
+\newcommand{\lra}[1]{{\left\langle #1 \right\rangle}}
+\newcommand{\lrp}[1]{{\left( #1 \right)}}
+\newcommand{\lrs}[1]{{\left[ #1 \right]}}
+\newcommand{\lrc}[1]{{\left\{ #1 \right\}}}
+
+%% Fractions and derivatives
+\newcommand{\fd}[2]{\frac{\d #1}{\d #2}}
+\newcommand{\fp}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\fv}[2]{\frac{\tilde \delta #1}{\tilde \delta #2}}
+
+%% Formatting
+%\newcommand{\hl}[1]{\colorbox{YellowOrange}{#1}}
+\newcommand{\mr}[1]{\textcolor{Maroon}{#1}}
+\newcommand{\hlt}[1]{\hl{\texttt{#1}}}
+
+\graphicspath{ {figures/} }
+
+
+%% HEADER
+
+\title{Modelling Poverty in the Philippines using Machine Learning}
+\author{Ian Angelo T. Aragoza} 
+% \email{iaaragoza@nip.upd.edu.ph}
+% \adviser{Reinabelle T. Reyes}{Ph.D.}
+% \reader{NA}{Ph.D.}
+%\secondReader{Cyril P. Sadia}{M.Sc.}%% optional if with coadviser
+%\coadviser{Another A. Adviser}{Ph.D.}%% replace "\coadviser" with "\secondReader" if no co-adviser
+% \director{Wilson O. Garcia}{Ph.D.}%% required
+% \dean{Giovanni S. Tapang}{Ph.D.} %%required
+% \gradyear{2022} \gradmonth{June} %%graduation month and year
+% \defenseDate{TBD} 
+
+\begin{document}
+    \maketitle
+    \makePrelim
+
+    \input{01_introduction}
+    \input{02_rrl}
+    \input{03_methodology}
+    \input{04_rnd}
+    \input{05_conclusion}
+
+    \appendix
+    \input{06_appendix.tex}
+    \bibliographystyle{ieeetr}
+    \bibliography{references}
+\end{document}
