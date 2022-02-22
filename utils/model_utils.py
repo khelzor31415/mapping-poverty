@@ -51,10 +51,99 @@ from sklearn.metrics import (
 )
 from sklearn.svm import SVR, SVC
 
-
 SEED = 42
 np.random.seed(SEED)
 
+
+
+
+def get_param_grid(model_type):
+    """
+    Returns the model parameter grid to be used as an input for cross validation hyper parameter optimization
+
+    Parameters
+    ----------
+    model_type : str
+        type of model to use ; implemented models are : 'ridge', 'random_forest', and 'xgboost'
+    
+    Returns
+    -------
+    dict
+        a dictionary of parameters
+    """
+
+    if (model_type == 'ridge') or (model_type == 'lasso'):
+        param_grid = {
+            'regressor__alpha' : stats.uniform.rvs(loc=0, scale=4, size=4),
+            'regressor__normalize' : [True, False]
+        }
+    if model_type == 'elastic_net':
+        param_grid = {
+            'regressor__alpha' : stats.uniform.rvs(loc=0, scale=4, size=4),
+            'regressor__l1_ratio' : np.random.uniform(0, 1, 10),
+            'regressor__normalize' : [True, False]
+        }
+    elif model_type == 'random_forest':
+        param_grid = {
+            'regressor__n_estimators' : stats.randint(200,2000),
+            'regressor__max_features' : ['auto', 'sqrt', 'log2'],
+            'regressor__max_depth' : stats.randint(3, 10),
+            'regressor__min_samples_split' : stats.randint(2, 10),
+            'regressor__min_samples_leaf' : stats.randint(1, 10),
+            'regressor__bootstrap' : [True, False] 
+        }
+    elif model_type == 'xgboost':
+        param_grid = {
+            'regressor__n_estimators' : stats.randint(200, 2000),
+            'regressor__learning_rate' : np.random.uniform(1e-3, 0.2, 1000),
+            'regressor__subsample' : np.random.uniform(0.9, 1, 1000),
+            'regressor__max_depth' : stats.randint(3, 10),
+            'regressor__colsample_bytree' : np.random.uniform(0.7, 1, 100),
+            'regressor__min_child_weight' : stats.randint(1, 5),
+            'regressor__gamma' : np.random.uniform(0.5, 5, 100)
+        }
+    elif model_type == 'svr':
+        param_grid = {
+            'regressor__kernel' : ['linear', 'poly', 'rbf'],
+            'regressor__degree' : stats.randint(1, 5),
+            'regressor__gamma' : ['auto', 'scale'],
+            'regressor__C' : np.random.uniform(0, 10, 100)
+        }
+    
+    return param_grid
+
+def get_model(model_type):
+    """
+    Returns the model instance to be used for cross validation
+
+    Parameters
+    ----------
+    model_type : str
+        type of model to use ; implemented models are 'ridge', 'random_forest', and 'xgboost'
+    
+    Returns
+    -------
+    model instance
+        model to be evaluated
+    """
+
+    if model_type == 'ridge':
+        model = Ridge(random_state=SEED)
+    elif model_type == 'lasso':
+        model = Lasso(random_state=SEED)
+    elif model_type == 'elastic_net':
+        model = ElasticNet(random_state=SEED)
+    elif model_type == 'random_forest':
+        model = RandomForestRegressor(random_state=SEED, n_jobs=-1)
+    elif model_type == 'xgboost':
+        model = xgb.XGBRegressor(
+            objective='reg:linear',
+            random_state=SEED,
+            n_jobs=-1
+        )
+    elif model_type == 'svr':
+        model = SVR()
+    return model
 
 def evaluate_model(
     data,
@@ -188,91 +277,125 @@ def evaluate_model(
                 cv, X, y, size=figsize
     return pd.DataFrame(results)
 
-def get_param_grid(model_type):
-    """
-    Returns the model parameter grid to be used as an input for cross validation hyper parameter optimization
 
-    Parameters
-    ----------
-    model_type : str
-        type of model to use ; implemented models are : 'ridge', 'random_forest', and 'xgboost'
-    
-    Returns
-    -------
-    dict
-        a dictionary of parameters
-    """
-
-    if (model_type == 'ridge') or (model_type == 'lasso'):
-        param_grid = {
-            'regressor__alpha' : stats.uniform.rvs(loc=0, scale=4, size=4),
-            'regressor__normalize' : [True, False]
-        }
-    if model_type == 'elastic_net':
-        param_grid = {
-            'regressor__alpha' : stats.uniform.rvs(loc=0, scale=4, size=4),
-            'regressor__l1_ratio' : np.random.uniform(0, 1, 10),
-            'regressor__normalize' : [True, False]
-        }
-    elif model_type == 'random_forest':
-        param_grid = {
-            'regressor__n_estimators' : stats.randint(200,2000),
-            'regressor__max_features' : ['auto', 'sqrt', 'log2'],
-            'regressor__max_depth' : stats.randint(3, 10),
-            'regressor__min_samples_split' : stats.randint(2, 10),
-            'regressor__min_samples_leaf' : stats.randint(1, 10),
-            'regressor__bootstrap' : [True, False] 
-        }
-    elif model_type == 'xgboost':
-        param_grid = {
-            'regressor__n_estimators' : stats.randint(200, 2000),
-            'regressor__learning_rate' : np.random.uniform(1e-3, 0.2, 1000),
-            'regressor__subsample' : np.random.uniform(0.9, 1, 1000),
-            'regressor__max_depth' : stats.randint(3, 10),
-            'regressor__colsample_bytree' : np.random.uniform(0.7, 1, 100),
-            'regressor__min_child_weight' : stats.randint(1, 5),
-            'regressor__gamma' : np.random.uniform(0.5, 5, 100)
-        }
-    elif model_type == 'svr':
-        param_grid = {
-            'regressor__kernel' : ['linear', 'poly', 'rbf'],
-            'regressor__degree' : stats.randint(1, 5),
-            'regressor__gamma' : ['auto', 'scale'],
-            'regressor__C' : np.random.uniform(0, 10, 100)
-        }
-    
-    return param_grid
-def get_model(model_type):
-    """
-    Returns the model instance to be used for cross validation
-
-    Parameters
-    ----------
-    model_type : str
-        type of model to use ; implemented models are 'ridge', 'random_forest', and 'xgboost'
-    
-    Returns
-    -------
-    model instance
-        model to be evaluated
-    """
-
-    if model_type == 'ridge':
-        model = Ridge(random_state=SEED)
-    elif model_type == 'lasso':
-        model = Lasso(random_state=SEED)
-    elif model_type == 'elastic_net':
-        model = ElasticNet(random_state=SEED)
-    elif model_type == 'random_forest':
-        model = RandomForestRegressor(random_state=SEED, n_jobs=-1)
-    elif model_type == 'xgboost':
-        model = xgb.XGBRegressor(
-            objective='reg:linear',
-            random_state=SEED,
-            n_jobs=-1
+def nested_cross_validation(
+    model,
+    X, 
+    y, 
+    param_grid,
+    scoring={"r2": "r2"}, 
+    refit='r2',
+    search_type='random',
+    n_splits=5,
+    n_iter=50,
+    std_scale=False,
+    minmax_scale=False,
+    polynomial=False,
+    poly_degree=2,
+    task_type='regression',
+    n_workers=-1,
+    verbose=0
+):
+    if task_type == 'classification':
+        inner_cv = StratifiedKFold(
+            n_splits = n_splits,
+            shuffle = True,
+            random_state = SEED
         )
-    elif model_type == 'svr':
-        model = SVR()
-    return model
-print('file is ok')
-# def nested_cross_validation():
+        outer_cv = StratifiedKFold(
+            n_splits = n_splits, 
+            shuffle = True,
+            random_state = SEED
+        )
+    elif task_type == 'regression':
+        inner_cv = KFold(
+            n_splits = n_splits, 
+            shuffle = True,
+            random_state = SEED
+        )
+        outer_cv = KFold(
+            n_splits = n_splits,
+            shuffle = True, 
+            random_state = SEED
+        )
+    pipeline = []
+    if std_scale:
+        std_scaler = StandardScaler()
+        pipeline.append(('std_scale', std_scaler))
+    if minmax_scale:
+        minmax_scaler = MinMaxScaler()
+        pipeline.append(('minmax_scale', minmax_scaler))
+    if polynomial:
+        poly = PolynomialFeatures(degree=poly_degree)
+        pipeline.append(('poly', poly))
+    if task_type == 'regression':
+        pipeline.append(('regressor', model))
+    
+    pipe = Pipeline(pipeline)
+
+    if search_type == 'grid':
+        cv = GridSearchCV(
+            estimator = pipe, 
+            scoring = scoring, 
+            param_grid = param_grid, 
+            cv = inner_cv, 
+            verbose = verbose, 
+            n_jobs = n_workers, 
+            refit = refit
+        )
+    elif search_type == 'random':
+        cv = RandomizedSearchCV(
+            estimator = pipe, 
+            n_iter = n_iter, 
+            scoring = scoring, 
+            param_distributions = param_grid, 
+            cv = inner_cv, 
+            verbose = verbose,
+            random_state = SEED, 
+            n_jobs = n_workers, 
+            refit = refit
+        )
+    
+    nested_scores = cross_validate(
+        cv,
+        X = X,
+        y = y,
+        cv = outer_cv, 
+        n_jobs = n_workers,
+        scoring = scoring, 
+        verbose = verbose, 
+        return_train_score = True
+    )
+
+    y_pred = cross_val_predict(
+        cv, 
+        X = X,
+        y = y, 
+        cv = outer_cv, 
+        n_jobs = n_workers, 
+        verbose = verbose
+    )
+
+    return cv, nested_scores, y, y_pred
+
+def plot_cross_val_results(
+    y_true,
+    y_pred,
+    indicator,
+    nested_scores,
+    refit='r2'
+):
+    ax = sns.regplot(
+        y_true,
+        y_pred,
+        line_kws={'color':'black', 'lw':1},
+        scatter_kws={'alpha':0.3}
+    )
+    plt.title(
+        indicator+r" $r^2: {0:.3f}$".format(
+            nested_scores['test_' + str(refit)].mean()
+        )
+    )
+    plt.xlabel('Observed ' + indicator.lower())
+    plt.ylabel('Predicted ' + indicator.lower())
+    plt.show()

@@ -44,7 +44,7 @@ def get_param_grid(model_type):
     elif model_type == 'elastic_net':
         param_grid = {
             'regressor__alpha' : stats.uniform.rvs(loc=0, scale=10, size=1000), 
-            'regressor__l1_ratio' : np.random.uniform(0, 1, 1000)
+            'regressor__l1_ratio' : np.random.uniform(0, 1, 1000),
             'regressor__normalize' : [True, False]
         }
     elif model_type == 'random_forest':
@@ -57,14 +57,4 @@ def get_param_grid(model_type):
             'regressor__min_samples_leaf' : stats.randint.rvs(1, 20, 10), 
             'regressor__bootstrap' : [True, False]
         }
-    
     return param_grid
-def get_model(model_type):
-    if model_type == 'lasso':
-        model = Lasso(random_state=SEED)
-    elif model_type == 'elastic_net':
-        model = ElasticNet(random_state=SEED)
-    elif model_type == 'random_forest':
-        model = RandomForestRegressor(random_state=SEED, n_jobs=-1)
-
-    return model
