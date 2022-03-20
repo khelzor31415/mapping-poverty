@@ -85,11 +85,11 @@ def get_param_grid(model_type):
         }
     elif model_type == 'random_forest':
         param_grid = {
-            'regressor__n_estimators' : stats.randint(200,2000),
+            'regressor__n_estimators' : stats.randint(200,3000), # stats.randint(200, 2000)
             'regressor__max_features' : ['auto', 'sqrt', 'log2'],
-            'regressor__max_depth' : stats.randint(3, 10),
-            'regressor__min_samples_split' : stats.randint(2, 10),
-            'regressor__min_samples_leaf' : stats.randint(1, 10),
+            'regressor__max_depth' : stats.randint(3, 20), # stats.randint(3, 10)
+            'regressor__min_samples_split' : stats.randint(2, 20), # stats.randint(2, 10)
+            'regressor__min_samples_leaf' : stats.randint(1, 20), # stats.randint(1, 10)
             'regressor__bootstrap' : [True, False] 
         }
     elif model_type == 'xgboost':
