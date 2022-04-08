@@ -85,11 +85,11 @@ def get_param_grid(model_type):
         }
     elif model_type == 'random_forest':
         param_grid = {
-            'regressor__n_estimators' : stats.randint(200,2000), # stats.randint(200, 2000)
+            'regressor__n_estimators' : stats.randint(200,3000), # stats.randint(200, 2000)
             'regressor__max_features' : ['auto', 'sqrt', 'log2'],
-            'regressor__max_depth' : stats.randint(3, 10), # stats.randint(3, 10)
-            'regressor__min_samples_split' : stats.randint(2, 10), # stats.randint(2, 10)
-            'regressor__min_samples_leaf' : stats.randint(1, 10), # stats.randint(1, 10)
+            'regressor__max_depth' : stats.randint(3, 20), # stats.randint(3, 10)
+            'regressor__min_samples_split' : stats.randint(2, 20), # stats.randint(2, 10)
+            'regressor__min_samples_leaf' : stats.randint(1, 20), # stats.randint(1, 10)
             'regressor__bootstrap' : [True, False] 
         }
     elif model_type == 'xgboost':
@@ -356,7 +356,6 @@ def nested_cross_validation(
             refit = refit
         )
     
-
     nested_scores = cross_validate(
         cv,
         X = X,
@@ -384,7 +383,6 @@ def plot_cross_val_results(
     y_pred,
     indicator,
     nested_scores,
-    model_type,
     refit='r2'
 ):
     ax = sns.regplot(
@@ -398,40 +396,6 @@ def plot_cross_val_results(
             nested_scores['test_' + str(refit)].mean()
         )
     )
-    
-    plt.xlabel('Observed wealth index')
-    plt.ylabel('Predicted wealth index')
-    plt.setp(ax.get_xticklabels(), rotation=10)
-    plt.setp(ax.get_yticklabels(), rotation=10)
-    plt.tight_layout()
-    plt.savefig('../images/final model/ml_{}_osmnetcols.png'.format(indicator), transparent=True, pad_inches=0, dpi=300)
-    plt.show()
-
-def random_forest_feature_importance(
-    cv, 
-    X, y,
-    n_features=30,
-    size=(10,15)
-):
-    feat_impt = {}
-    for z in range(len(X.columns)):
-        feat_impt[
-            X.columns[z]
-        ] = cv.best_estimator_.named_steps[
-            'regressor'
-        ].feature_importances_[
-            z
-        ]
-    pd.DataFrame(
-        {'Feature Importance' : feat_impt}
-    ).sort_values(
-        by='Feature Importance', ascending=False
-    ).iloc[
-        :n_features
-    ].plot(
-        kind='barh', figsize=size
-    )
-
-    plt.grid()
-    plt.gca().invert_yaxis()
+    plt.xlabel('Observed ' + indicator.lower())
+    plt.ylabel('Predicted ' + indicator.lower())
     plt.show()
